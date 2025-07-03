@@ -20,19 +20,20 @@ const Navbar = () => {
         </div>
     <nav className="navbar">
     
-     <a href= '/contact' className="navbar-logo1"> Registration</a>
+     {/* <a href= '/contact' className="navbar-logo1"> Registration</a> */}
+    <Link to='/contact' className="navbar-logo1"> Registration</Link>
       
       <a href="/" className="navbar-desktop">AmFia Education</a>
       
 
        
-      <div className={`nav-links1 ${isOpen ? 'active' : ''}`}>
+      <div  className={`nav-links1 ${isOpen ? 'active' : ''}`}>
 
-        <Link to='/home'><a>Home</a></Link>
-        <Link to='/about'><a>About</a></Link>
-        <Link to='/services'><a>Services</a></Link>
-        <Link to='/careers'><a>Careers</a></Link>
-        <Link to='/contact'><a>Contact</a></Link>
+        <Link to='/home'>Home</Link>
+        <Link to='/about'>About</Link>
+        <Link to='/services'>Services</Link>
+        <Link to='/careers'>Careers</Link>
+        <Link to='/contact'>Contact</Link>
        
       </div>
       

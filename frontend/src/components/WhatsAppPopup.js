@@ -4,7 +4,7 @@ import './WhatsAppPopup.css'; // Create this CSS file
 
 const WhatsAppPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const phoneNumber = '919876543210'; // Replace with your actual number (without + or spaces)
+  const phoneNumber = '916392492293'; // Replace with your actual number (without + or spaces)
 
   const openWhatsApp = () => {
     window.open(`https://wa.me/${phoneNumber}`, '_blank');
@@ -30,7 +30,7 @@ const WhatsAppPopup = () => {
               <h3>Chat with Us on WhatsApp</h3>
               <div className="phone-number" onClick={openWhatsApp}>
                 <FaPhone className="phone-icon" />
-                <span>+91 63924 92293</span> {/* Formatted number */}
+                <span>+91 6392492293</span> {/* Formatted number */}
               </div>
               <p>Click the number to start chatting</p>
               <button className="whatsapp-button" onClick={openWhatsApp}>
