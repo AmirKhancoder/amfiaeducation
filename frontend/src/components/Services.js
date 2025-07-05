@@ -2,6 +2,7 @@ import React from 'react';
 import './Services.css';
 import { FaChalkboardTeacher, FaSchool, FaBook, FaLaptopCode, FaUserGraduate, FaBrain, FaClipboardCheck } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const Services = () => {
   const services = [
@@ -75,6 +76,11 @@ const Services = () => {
 
   return (
     <div className="services-page">
+      <Helmet>
+        <title>Amfia Education | Online Skill Classes</title>
+        <meta name="description" content="amfia learning classes, amfia school development, amfia supporting schools, amfia teachers training, amfia computer courses, english speaking, career planning" />
+      </Helmet>
+
       <section className="hero-section">
         <div className="hero-content">
           <h1>Our Comprehensive Services</h1>

@@ -18,23 +18,23 @@ function Importance() {
           
           <ul className="benefits-list">
             <li>
-              <img src={icon1} alt="Check" className="importanceBenefit-icon" />
+              <img src={icon1} alt="Amfia Education Banner for Online Classes" className="importanceBenefit-icon" />
               <span>Prepares students for real-life skills</span>
             </li>
             <li>
-              <img src={icon2} alt="Check" className="importanceBenefit-icon" />
+              <img src={icon2} alt="Amfia Education Banner for Online Classes" className="importanceBenefit-icon" />
               <span>Builds strong communication and confidence</span>
             </li>
             <li>
-              <img src={icon3} alt="Check" className="importanceBenefit-icon" />
+              <img src={icon3} alt="Amfia Education Banner for Online Classes" className="importanceBenefit-icon" />
               <span>Supports school exams and career planning</span>
             </li>
             <li>
-              <img src={icon4} alt="Check" className="importanceBenefit-icon" />
+              <img src={icon4} alt="Amfia Education Banner for Online Classes" className="importanceBenefit-icon" />
               <span>Parents will clearly see improvement</span>
             </li>
             <li>
-              <img src={icon5} alt="Check" className="importanceBenefit-icon" />
+              <img src={icon5} alt="Amfia Education Banner for Online Classes" className="importanceBenefit-icon" />
               <span>Helps students become job-ready and future-ready</span>
             </li>
           </ul>

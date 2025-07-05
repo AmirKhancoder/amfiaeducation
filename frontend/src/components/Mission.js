@@ -1,9 +1,14 @@
 import React from 'react';
 import './Mission.css';
+import { Helmet } from 'react-helmet';
 
 function Mission() {
     return (
         <div className="mission-container">
+            <Helmet>
+        <title>Amfia Education | Online Futute-Ready Classes</title>
+        <meta name="description" content="Our goal is simple — Future-Ready Students with the power to succeed in school, life, and career." />
+      </Helmet>
             <div className="mission-content">
                 <h2 className="mission-title">Our Mission</h2>
                 <p className="mission-statement">

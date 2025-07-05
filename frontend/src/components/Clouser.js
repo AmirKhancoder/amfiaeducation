@@ -15,7 +15,7 @@ function Clouser(){
             <p>Give them real-life skills, confidence, and career-ready learning with our Future-Ready Learning online program.</p>
            </div>
            <div className="rightBody">
-              <img className ="body_img" src={img1}/>
+              <img className ="body_img" src={img1} alt="Amfia Education Banner for Online Classes"/>
            </div>
         </div>
     )
