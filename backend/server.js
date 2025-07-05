@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: 'https://amfiaeducation.com',
+  origin: ['https://amfiaeducation.com', 'https://www.amfiaeducation.com/', 'www.amfiaeducation.com' ],
   methods: ['POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type']
 }));
