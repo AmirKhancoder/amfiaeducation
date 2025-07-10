@@ -22,7 +22,8 @@
   
   .leftBody h4 {
     color: #4CAF50;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+    font-size: 40px;
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -31,21 +32,32 @@
   .leftBody h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: #333;
+    /* color: #333; */
+    color: blue;
     line-height: 1.2;
   }
   
   .leftBody h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #444;
+    /* color: #444; */
+    -webkit-text-fill-color: transparent;
+    background: var(--gradients-custom-custom5, linear-gradient(45deg, #4338ca 10%, #38bdf8 90%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    
   }
   
   .leftBody p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #666;
+    color: black;
+    font-weight: bold;
+    /* color: white; */
     margin-bottom: 2rem;
+    /* background-color: rgba(10, 10, 243, 0.788); */
+    border-radius: 10px;
+    padding: 6px;
   }
   
   .rightBody {

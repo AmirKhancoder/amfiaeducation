@@ -9,6 +9,8 @@ import MobileCallBack from './MobileCallBack'
 import WhatsAppPopup from './WhatsAppPopup'
 import StatsCards from './StatsCards'
 import { Helmet } from "react-helmet";
+import Team from './Team'
+import FAQ from './FAQ'
 
 
 function Home() {
@@ -25,6 +27,8 @@ function Home() {
         <Importance/>
         <StatsCards/>
         <Services/>
+        {/* <Team/> */}
+        <FAQ/>
         <Footer/>
         <MobileCallBack/>
         <WhatsAppPopup/>
