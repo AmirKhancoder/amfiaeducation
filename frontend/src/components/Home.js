@@ -27,7 +27,7 @@ function Home() {
         <Importance/>
         <StatsCards/>
         <Services/>
-        {/* <Team/> */}
+        <Team/>
         <FAQ/>
         <Footer/>
         <MobileCallBack/>

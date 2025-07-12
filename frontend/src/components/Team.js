@@ -1,35 +1,43 @@
 import React from 'react';
 import './Team.css';
+import imageSh from '../images/imageSh.jpg'
+import imageSu from '../images/imageSu.jpeg'
+import imageMu from '../images/imageMu.jpg'
+import imageAs from '../images/imageAs.jpg'
 
 const Team = () => {
   const teamMembers = [
     {
       id: 1,
-      name: 'Dr. Sarah Johnson',
-      role: 'Founder & CEO',
-      bio: 'Education specialist with 15+ years experience in curriculum development',
-      img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'
+      name: 'Subham Patro',
+      role: 'Math Tutor',
+      bio: 'Education specialist with 5+ years experience in curriculum development and teaching',
+      // img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'
+      img: imageSu
     },
     {
       id: 2,
-      name: 'Michael Chen',
-      role: 'CTO',
-      bio: 'Technology expert focused on innovative learning platforms',
-      img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'
+      name: 'Mukesh Kumar',
+      role: 'EVS Tutor',
+      bio: 'A caring EVS teacher for Grades 5–10, known for making nature, science, and environment easy and interesting.',
+      // img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'
+      img: imageMu
     },
     {
       id: 3,
-      name: 'Priya Patel',
-      role: 'Head of Instruction',
+      name: 'Asutosh Sharma',
+      role: 'English',
       bio: 'Passionate educator with expertise in student engagement strategies',
-      img: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'
+      // img: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'
+      img: imageAs
     },
     {
       id: 4,
-      name: 'David Wilson',
-      role: 'Marketing Director',
-      bio: 'Digital marketing specialist helping students discover quality education',
-      img: 'https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'
+      name: 'Shakeel Gori',
+      role: 'ICT Tutor',
+      bio: 'Loved by students for his practical teaching style, he turns every ICT class into a hands-on learning adventure.',
+      // img: 'https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80'
+      img: imageSh
     }
   ];
 
