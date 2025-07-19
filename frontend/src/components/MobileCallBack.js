@@ -123,9 +123,9 @@ const MobileCallBack = () => {
     setIsSubmitting(true);
     setStatus(null);
     
-
+    // const response = await fetch('https://amfiback.onrender.com/api/inquiry', {
     try {
-      const response = await fetch('https://amfiback.onrender.com/api/inquiry', {
+      const response = await fetch('http://localhost:5002/api/inquiry', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

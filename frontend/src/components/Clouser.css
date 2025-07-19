@@ -12,6 +12,10 @@
     align-items: center;
     justify-content: space-between;
     background-color: #f8f9fa;
+    /* background-image: url("https://acciojob.com/_next/static/media/impactSectionBg.0ff54bf9.svg"); */
+    background-image: url("https://acciojob.com/_next/static/media/heroBgDesktop.3e6964f3.svg");
+    
+
   }
   
   .leftBody {

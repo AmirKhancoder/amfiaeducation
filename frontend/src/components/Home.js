@@ -26,8 +26,8 @@ function Home() {
         <Mission/>
         <Importance/>
         <StatsCards/>
-        <Services/>
         <Team/>
+        <Services/>
         <FAQ/>
         <Footer/>
         <MobileCallBack/>

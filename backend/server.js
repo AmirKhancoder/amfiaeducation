@@ -9,8 +9,9 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: ['https://amfiaeducation.com', 'https://www.amfiaeducation.com', 'http://localhost:3000' ],
-  methods: ['POST', 'OPTIONS'],
+  origin: ['http://localhost:3000', 'www.amfiaeducation.com', 'https://www.amfiaeducation.com/'],
+  // methods: ['POST', 'OPTIONS'],
+  methods: ['GET', 'POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type']
 }));
 app.use(express.json());

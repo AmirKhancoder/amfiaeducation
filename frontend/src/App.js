@@ -9,6 +9,7 @@ import Services from './components/Services';
 import Careers from './components/Careers';
 import Curriculum from './components/Curriculum';
 import Blog from './components/Blog/Blog';
+import BlogPost from './components/Blog/BlogPost';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path='/getTouch' element={<ContactForm />} />
           <Route path='/courses' element={<Curriculum />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
         </Routes>
       </BrowserRouter>
     </div>

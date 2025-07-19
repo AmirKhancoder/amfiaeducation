@@ -10,17 +10,17 @@ const blogPosts = [
     title: '5 Proven Methods to Improve Math Skills for Grade 5-10 Students',
     excerpt: 'Discover effective techniques to boost mathematical understanding and performance in middle school students.',
     category: 'Mathematics',
-    date: '2023-10-15',
+    date: '',
     readTime: '5 min read',
     image: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
   },
   {
     id: 2,
     slug: 'future-ready-skills',
-    title: '10 Future-Ready Skills Every Student Should Learn in 2023',
+    title: '10 Future-Ready Skills Every Student Should Learn in 2025',
     excerpt: 'Essential skills that will prepare students for the jobs of tomorrow in our rapidly changing world.',
     category: 'Future Skills',
-    date: '2023-10-10',
+    date: '',
     readTime: '8 min read',
     image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'
   },

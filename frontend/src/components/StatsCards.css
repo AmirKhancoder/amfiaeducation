@@ -8,6 +8,7 @@
   
   .stats-card {
     background: #ffffff;
+    background-image: url('https://acciojob.com/_next/static/media/hiringDrivesBgWeb.2817034f.svg');
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     padding: 30px;

@@ -1,9 +1,11 @@
 .mission-container {
-    background-color: #f0f8ff;
+    /* background-color: rgb(11, 11, 236); */
+    background: linear-gradient(180deg, #2563eb, #3b82f6);
     padding: 4rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .mission-content {
@@ -13,7 +15,8 @@
 
 .mission-title {
     font-size: 2.5rem;
-    color: #2c3e50;
+    /* color: #2c3e50; */
+    color: white;
     margin-bottom: 1.5rem;
     position: relative;
     display: inline-block;
@@ -32,7 +35,8 @@
 
 .mission-statement {
     font-size: 1.5rem;
-    color: #34495e;
+    /* color: #34495e; */
+    color: white;
     font-weight: 500;
     margin-bottom: 2rem;
     line-height: 1.4;
@@ -40,7 +44,7 @@
 
 .mission-details {
     font-size: 1.1rem;
-    color: #4a5568;
+    color: white;
     line-height: 1.8;
     margin: 0 auto;
 }
@@ -50,7 +54,7 @@
 }
 
 .mission-details strong {
-    color: #2c3e50;
+    color: white;
     font-weight: 600;
 }
 
