@@ -125,7 +125,7 @@ const MobileCallBack = () => {
     
     // const response = await fetch('https://amfiback.onrender.com/api/inquiry', {
     try {
-      const response = await fetch('http://localhost:5002/api/inquiry', {
+      const response = await fetch('https://kaifiyaback.onrender.com/api/inquiry', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
