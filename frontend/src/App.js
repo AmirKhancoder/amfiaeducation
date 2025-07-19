@@ -10,6 +10,7 @@ import Careers from './components/Careers';
 import Curriculum from './components/Curriculum';
 import Blog from './components/Blog/Blog';
 import BlogPost from './components/Blog/BlogPost';
+import ApplyNow from './components/ApplyNow';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path='/courses' element={<Curriculum />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path='/applyPath' element={<ApplyNow/>}/>
         </Routes>
       </BrowserRouter>
     </div>

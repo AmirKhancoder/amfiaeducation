@@ -6,6 +6,10 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className="footer">
+      {/* Floating background elements */}
+      <div className="floating-element1"></div>
+      <div className="floating-element1"></div>
+      
       <div className="footer-container">
         <div className="footer-section">
           <h3>Contact Us</h3>
@@ -28,17 +32,17 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Quick Links</h3>
           <ul className="quick-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/courses">Courses</a></li>
-            <li><a href="/testimonials">Success Stories</a></li>
-            <li><Link to='/blog'>Blog</Link> </li>
-            <li><a href="/contact">Contact</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/courses">Courses</Link></li>
+            <li><Link to="/testimonials">Success Stories</Link></li>
+            <li><Link to="/blog">Blog</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
 
         <div className="footer-section">
-          <h3>Follow Us</h3>
+          <h3>Connect With Us</h3>
           <div className="social-links">
             <a href="https://youtube.com/@amfialearn?si=oFhJ_WquBI1BsnWi" target="_blank" rel="noopener noreferrer">
               <FaYoutube className="social-icon" />
@@ -54,10 +58,10 @@ const Footer = () => {
             </a>
           </div>
           <div className="newsletter">
-            <p>Subscribe to our newsletter</p>
-            <form className="newsletter-form">
-              <input type="email" placeholder="Your email" />
-              <button className='footerSuscribeButton' type="submit">Subscribe</button>
+            <p>Get updates on courses & offers</p>
+            <form className="newsletter-form1">
+              <input className='suscribe_input' type="email" placeholder="Your email address" />
+              <button className='footerSuscribeButton1' type="submit">Subscribe</button>
             </form>
           </div>
         </div>
@@ -66,8 +70,8 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} AmFia Education. All Rights Reserved.</p>
         <div className="legal-links">
-          <a href="/privacy">Privacy Policy</a>
-          <a href="/terms">Terms of Service</a>
+          <Link to="/privacy">Privacy Policy</Link>
+          <Link to="/terms">Terms of Service</Link>
         </div>
       </div>
     </footer>

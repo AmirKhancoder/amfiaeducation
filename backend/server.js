@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const contactRoutes = require('./routes/contactRoutes');
 const inquiryRoutes = require('./routes/inquiryRoutes');
+const applyRoutes = require('./routes/applyRoutes')
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -19,6 +20,7 @@ app.use(express.json());
 // Routes
 app.use(contactRoutes);
 app.use(inquiryRoutes);
+app.use(applyRoutes);
 
 // Error handling
 app.use((err, req, res, next) => {

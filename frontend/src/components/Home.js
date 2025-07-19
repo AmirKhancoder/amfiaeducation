@@ -11,6 +11,8 @@ import StatsCards from './StatsCards'
 import { Helmet } from "react-helmet";
 import Team from './Team'
 import FAQ from './FAQ'
+import ScholarshipContainer from './ScholarshipContainer'
+import ApplyNow from './ApplyNow'
 
 
 function Home() {
@@ -22,10 +24,12 @@ function Home() {
       </Helmet>
 
         <Navbar/>
+        {/* <ApplyNow/> */}
         <Clouser/>
         <Mission/>
+        <ScholarshipContainer/>
         <Importance/>
-        <StatsCards/>
+        {/* <StatsCards/> */}
         <Team/>
         <Services/>
         <FAQ/>

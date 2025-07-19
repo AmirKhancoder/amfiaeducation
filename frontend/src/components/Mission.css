@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -140px;
     
 }
 
@@ -61,6 +62,7 @@
 /* Tablet View */
 @media screen and (max-width: 992px) {
     .mission-container {
+        margin-top: 2px;
         padding: 3rem 1.5rem;
     }
     

@@ -7,7 +7,7 @@ import { Helmet } from 'react-helmet';
 const Services = () => {
   const services = [
     {
-      icon: <FaChalkboardTeacher />,
+      icon: <FaChalkboardTeacher className="service-icon-svg" />,
       title: "Teacher Training Programs",
       items: [
         "Digital teaching techniques",
@@ -17,7 +17,7 @@ const Services = () => {
       ]
     },
     {
-      icon: <FaSchool />,
+      icon: <FaSchool className="service-icon-svg" />,
       title: "School Development Support",
       items: [
         "Curriculum planning",
@@ -27,7 +27,7 @@ const Services = () => {
       ]
     },
     {
-      icon: <FaBook />,
+      icon: <FaBook className="service-icon-svg" />,
       title: "Book Publishing & Customized Content",
       items: [
         "Pre-primary & Primary books",
@@ -36,7 +36,7 @@ const Services = () => {
       ]
     },
     {
-      icon: <FaLaptopCode />,
+      icon: <FaLaptopCode className="service-icon-svg" />,
       title: "IT Courses & Upskilling",
       items: [
         "MS Office, Typing, Internet Basics",
@@ -45,7 +45,7 @@ const Services = () => {
       ]
     },
     {
-      icon: <FaUserGraduate />,
+      icon: <FaUserGraduate className="service-icon-svg" />,
       title: "Career Awareness Workshops",
       items: [
         "Career planning for students (Grades 8–12)",
@@ -54,7 +54,7 @@ const Services = () => {
       ]
     },
     {
-      icon: <FaBrain />,
+      icon: <FaBrain className="service-icon-svg" />,
       title: "Soft Skills & Personality Development",
       items: [
         "English speaking",
@@ -64,7 +64,7 @@ const Services = () => {
       ]
     },
     {
-      icon: <FaClipboardCheck />,
+      icon: <FaClipboardCheck className="service-icon-svg" />,
       title: "Assessment & Evaluation Services",
       items: [
         "Skill-based tests",
@@ -76,6 +76,10 @@ const Services = () => {
 
   return (
     <div className="services-page">
+      {/* Floating background elements */}
+      <div className="floating-bg-element"></div>
+      <div className="floating-bg-element"></div>
+      
       <Helmet>
         <title>Amfia Education | Online Skill Classes</title>
         <meta name="description" content="amfia learning classes, amfia school development, amfia supporting schools, amfia teachers training, amfia computer courses, english speaking, career planning" />
@@ -122,7 +126,7 @@ const Services = () => {
         <h2>Ready to Transform Your Learning Experience?</h2>
         <p>Contact us today to discuss how we can customize these services for your needs</p>
         <Link to='/getTouch'>
-        <button className="cta-button">Get in Touch</button>
+          <button className="cta-button">Get in Touch</button>
         </Link>
       </section>
     </div>

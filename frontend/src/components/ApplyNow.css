@@ -1,0 +1,342 @@
+/* ApplyNow.css */
+/* Base Styles */
+.amfia-apply-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Header Styles */
+  .amfia-form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .amfia-form-title {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+  
+  .amfia-form-subtitle {
+    color: #7f8c8d;
+    margin-bottom: 1.5rem;
+  }
+  
+  .amfia-header-decoration {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #4338ca, #38bdf8);
+    margin: 0 auto;
+    border-radius: 2px;
+  }
+  
+  /* Form Group Styles */
+  .amfia-form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Floating Input Styles */
+  .amfia-floating-input {
+    position: relative;
+  }
+  
+  .amfia-text-input {
+    width: 531px !important;
+    padding: 1rem 1rem 1rem 3rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: transparent;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .amfia-input-label {
+    position: absolute;
+    left: 3rem;
+    top: 1rem;
+    color: #7f8c8d;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    background: white;
+    padding: 0 0.5rem;
+    z-index: 1;
+  }
+  
+  .amfia-text-input:focus,
+  .amfia-text-input:not(:placeholder-shown) {
+    border-color: #4338ca;
+    outline: none;
+  }
+  
+  .amfia-text-input:focus + .amfia-input-label,
+  .amfia-text-input:not(:placeholder-shown) + .amfia-input-label {
+    top: -0.6rem;
+    left: 2.5rem;
+    font-size: 0.8rem;
+    color: #4338ca;
+    z-index: 3;
+  }
+  
+  .amfia-input-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #7f8c8d;
+    transition: all 0.3s ease;
+  }
+  
+  .amfia-text-input:focus ~ .amfia-input-icon,
+  .amfia-text-input:not(:placeholder-shown) ~ .amfia-input-icon {
+    color: #4338ca;
+  }
+  
+  .amfia-icon-svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: currentColor;
+  }
+  
+  /* Select Group Styles */
+  .amfia-select-group {
+    position: relative;
+  }
+  
+  .amfia-select-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-weight: 500;
+  }
+  
+  .amfia-select-input {
+    width: 100%;
+    padding: 1rem 3rem 1rem 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    appearance: none;
+    background: transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .amfia-select-input:focus {
+    border-color: #4338ca;
+    outline: none;
+  }
+  
+  .amfia-select-input.amfia-placeholder {
+    color: #7f8c8d;
+  }
+  
+  .amfia-select-arrow {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #7f8c8d;
+  }
+  
+  .amfia-select-arrow::after {
+    content: '';
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg);
+  }
+  
+  /* Status Alert Styles */
+  .amfia-status-alert {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: amfia-slideIn 0.3s ease-out;
+  }
+  
+  @keyframes amfia-slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .amfia-status-alert.amfia-success {
+    background: rgba(46, 204, 113, 0.2);
+    color: #27ae60;
+    border: 1px solid #27ae60;
+  }
+  
+  .amfia-status-alert.amfia-error {
+    background: rgba(231, 76, 60, 0.2);
+    color: #c0392b;
+    border: 1px solid #c0392b;
+  }
+  
+  .amfia-alert-close {
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 1rem;
+  }
+  
+  /* Submit Button Styles */
+  .amfia-submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, #4338ca, #38bdf8);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .amfia-submit-btn:hover {
+    background: linear-gradient(90deg, #38bdf8, #4338ca);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(67, 56, 202, 0.3);
+  }
+  
+  .amfia-submit-btn:disabled {
+    background: #bdc3c7;
+    transform: none;
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+  
+  .amfia-btn-text {
+    transition: all 0.3s ease;
+  }
+  
+  .amfia-btn-icon {
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .amfia-submit-btn:hover .amfia-btn-icon {
+    transform: translateX(5px);
+  }
+  
+  /* Form Decoration Styles */
+  .amfia-form-decoration {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .amfia-decoration-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(56, 189, 248, 0.1);
+  }
+  
+  .amfia-decoration-circle:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    top: -30px;
+    right: -30px;
+  }
+  
+  .amfia-decoration-circle:nth-child(2) {
+    width: 120px;
+    height: 120px;
+    top: 50px;
+    right: -60px;
+  }
+  
+  .amfia-decoration-circle:nth-child(3) {
+    width: 60px;
+    height: 60px;
+    top: 100px;
+    right: -10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .amfia-apply-container {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+    
+    .amfia-form-title {
+      font-size: 1.5rem;
+    }
+    
+    .amfia-form-subtitle {
+      font-size: 0.9rem;
+    }
+    
+    .amfia-text-input {
+      padding-left: 2.5rem;
+      width: 362px !important;
+    }
+    
+    .amfia-input-label {
+      left: 2.5rem;
+    }
+    
+    .amfia-input-icon {
+      left: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .amfia-apply-container {
+      padding: 1rem;
+    }
+    
+    .amfia-form-title {
+      font-size: 1.3rem;
+    }
+    
+    .amfia-text-input,
+    .amfia-select-input {
+      padding: 0.8rem 0.8rem 0.8rem 2.5rem;
+    font-size: 0.9rem;
+    width: 362px !important;
+    }
+    
+    .amfia-input-icon {
+      left: 0.7rem;
+    }
+    
+    .amfia-select-arrow {
+      right: 0.7rem;
+    }
+  }
