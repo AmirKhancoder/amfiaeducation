@@ -25,7 +25,7 @@ const Curriculum = () => {
     },
     english: {
       '5-6': {
-        core: ['Storytelling Techniques', 'Creative Writing', 'Reading Fluency'],
+        core: ['Storytelling Techniques', 'Creative Writing', 'Reading Fluency', 'Listening & Speaking Activities'],
         competitive: ['Spell Bee Preparation', 'Vocabulary Building'],
         future: ['Digital Communication', 'Emotional Intelligence']
       },

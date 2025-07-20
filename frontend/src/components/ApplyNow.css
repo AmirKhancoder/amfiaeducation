@@ -325,11 +325,10 @@
       font-size: 1.3rem;
     }
     
-    .amfia-text-input,
-    .amfia-select-input {
+    .amfia-text-input {
       padding: 0.8rem 0.8rem 0.8rem 2.5rem;
     font-size: 0.9rem;
-    width: 362px !important;
+    width: 290px !important;
     }
     
     .amfia-input-icon {

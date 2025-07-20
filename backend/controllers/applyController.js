@@ -1,6 +1,5 @@
 const nodemailer = require('nodemailer');
 
-// Create reusable transporter object using the default SMTP transport
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -9,61 +8,24 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-const submitApplication = async ({ name, grade, course, phone, city }) => {
-  // Email content for admin notification
-  const adminMailOptions = {
-    from: `"AmFia Applications" <${process.env.EMAIL_USER}>`,
-    to: process.env.ADMIN_EMAIL,
-    subject: `New Application: ${name} - ${course}`,
+const sendClassDetails = async ({ name, grade, course, phone, city }) => {
+  const mailOptions = {
+    from: `"Contact Form" <${process.env.EMAIL_USER}>`,
+    to: process.env.RECEIVER_EMAIL,
+    subject: `New Contact from ${name}`,
     html: `
-      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-        <h2 style="color: #2563eb;">New Student Application</h2>
-        <table style="width: 100%; border-collapse: collapse;">
-          <tr>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd; font-weight: bold;">Student Name:</td>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;">${name}</td>
-          </tr>
-          <tr>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd; font-weight: bold;">Grade:</td>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;">${grade}</td>
-          </tr>
-          <tr>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd; font-weight: bold;">Course:</td>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;">${course}</td>
-          </tr>
-          <tr>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd; font-weight: bold;">Phone:</td>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;">${phone}</td>
-          </tr>
-          <tr>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd; font-weight: bold;">City:</td>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;">${city}</td>
-          </tr>
-        </table>
-        <p style="margin-top: 20px;">This application was submitted through the AmFia Education website.</p>
-      </div>
+      <h2>New Contact Form Submission</h2>
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Grade:</strong> ${grade}</p>
+       <p><strong>Course:</strong> ${course}</p>
+      <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
+      <p><strong>City:</strong></p>
+      <p>${city}</p>
     `,
-    replyTo: process.env.ADMIN_EMAIL
+    replyTo: email
   };
 
-  // Email content for student confirmation
-  const studentMailOptions = {
-    from: `"AmFia Education" <${process.env.EMAIL_USER}>`,
-    to: process.env.TEST_MODE === 'true' ? process.env.ADMIN_EMAIL : phone + process.env.SMS_GATEWAY, // For actual SMS via email gateway
-    subject: `Application Received - AmFia Education`,
-    text: `Dear ${name},\n\nThank you for applying to AmFia Education's ${course} program for ${grade}. We have received your application and will contact you shortly.\n\nBest regards,\nAmFia Team`
-  };
-
-  // Send both emails
-  await Promise.all([
-    transporter.sendMail(adminMailOptions),
-    transporter.sendMail(studentMailOptions)
-  ]);
-
-  // In a real application, you might also:
-  // 1. Save to database
-  // 2. Trigger CRM integration
-  // 3. Send SMS notification
+  return transporter.sendMail(mailOptions);
 };
 
-module.exports = { submitApplication };
+module.exports = { sendClassDetails };

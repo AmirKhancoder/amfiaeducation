@@ -34,7 +34,7 @@ const FAQ = () => {
   return (
     <section className="faq-section">
       <div className="container">
-        <h2 className="section-title">Frequently Asked Questions</h2>
+        <h2 className="section-titleA">Frequently Asked Questions</h2>
         <p className="section-subtitle">Find quick answers to common queries</p>
         
         <div className="faq-container">

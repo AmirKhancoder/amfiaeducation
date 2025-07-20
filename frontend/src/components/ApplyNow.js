@@ -12,7 +12,7 @@ const ApplyNow = () => {
   const [status, setStatus] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const grades = ['Select Grade', 'Class 1', 'Class 2', 'Class 3', 'Class 4', 'Class 5', 
+  const grades = ['Select Grade', 'Class 5', 
                  'Class 6', 'Class 7', 'Class 8', 'Class 9', 'Class 10', 'Class 11', 'Class 12'];
   const courses = ['Select Course', 'English Speaking', 'Math Foundation', 'Computer Basics', 
                   'Science Concepts', 'Career Guidance', 'All Subjects'];
