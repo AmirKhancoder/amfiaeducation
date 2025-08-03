@@ -14,6 +14,7 @@ import ApplyNow from './components/ApplyNow';
 import PrivacyPolicy from './components/TermsCondition/PrivacyPolicy';
 import TermsAndCondition from './components/TermsCondition/TermsAndCondition';
 import Refund from './components/TermsCondition/Refund';
+import Shipping from './components/TermsCondition/Shipping';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route path='/privacy' element={<PrivacyPolicy/>}/>
           <Route path='/terms' element={<TermsAndCondition/>}/>
           <Route path='/refund' element={<Refund/>}/>
+          <Route path='/shipping' element={<Shipping/>}/>
         </Routes>
       </BrowserRouter>
     </div>

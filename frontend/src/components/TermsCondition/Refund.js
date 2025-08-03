@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Refund() {
   return (
@@ -28,6 +29,7 @@ function Refund() {
 <p>Refunds will not be issued for change of mind, child disinterest, or partial attendance. </p>
 
 <p>Fees for any teacher training programs, scholarship processing, or administrative services are non-refundable. </p>
+<Link to='/shipping'><p>Shipping</p></Link>
 
 <p>For any questions or refund-related support, please contact our team: </p>
 <p>📧 contact@amfiaeducation.com </p>
