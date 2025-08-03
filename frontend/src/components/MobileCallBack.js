@@ -151,10 +151,10 @@ const MobileCallBack = () => {
 
 
   return (
-    <div className="mobile-callback-container">
+    <div className="mobile-callback-container-mail">
       {/* Sticky Button */}
-      <div className="sticky-call-button" onClick={toggleForm}>
-        <FaPhone className="call-icon" />
+      <div className="sticky-call-button--mail" onClick={toggleForm}>
+        <FaPhone className="call-icon-mail" />
         <span>Request Call Back</span>
       </div>
 
@@ -165,18 +165,18 @@ const MobileCallBack = () => {
       )}
 
       {/* Popup Form */}
-      <div className={`callback-popup ${isOpen ? 'open' : ''}`}>
-        <div className="popup-header">
+      <div className={`callback-popup-mail ${isOpen ? 'open' : ''}`}>
+        <div className="popup-header-mail">
           <h3>Talk to Our Expert</h3>
-          <button className="close-btn" onClick={toggleForm}>
+          <button className="close-btn-mail" onClick={toggleForm}>
             <FaTimes />
           </button>
         </div>
         
 
         <form onSubmit={handleSubmit}>
-          <div className="input-group">
-            <FaUser className="input-icon" />
+          <div className="input-group-mail">
+            <FaUser className="input-icon-mail" />
             <input
               type="text"
               id="name"
@@ -188,8 +188,8 @@ const MobileCallBack = () => {
             />
           </div>
           
-          <div className="input-group">
-            <FaPhone className="input-icon" />
+          <div className="input-group-mail">
+            <FaPhone className="input-icon-mail" />
             <input
               type="tel"
               id="phone"
@@ -201,8 +201,8 @@ const MobileCallBack = () => {
             />
           </div>
           
-          <div className="input-group">
-            <FaComment className="input-icon" />
+          <div className="input-group-mail">
+            <FaComment className="input-icon-mail" />
             
              <textarea
              id="messageUser"
@@ -217,7 +217,7 @@ const MobileCallBack = () => {
             
           </div>
           
-          <button type="submit" disabled={isSubmitting} className="submit-btn">
+          <button type="submit" disabled={isSubmitting} className="submit-btn-mail">
           {isSubmitting ? 'Requesting...' : 'Request Call Back'}
             {/* Request Call Back */}
           </button>

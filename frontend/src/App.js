@@ -11,6 +11,9 @@ import Curriculum from './components/Curriculum';
 import Blog from './components/Blog/Blog';
 import BlogPost from './components/Blog/BlogPost';
 import ApplyNow from './components/ApplyNow';
+import PrivacyPolicy from './components/TermsCondition/PrivacyPolicy';
+import TermsAndCondition from './components/TermsCondition/TermsAndCondition';
+import Refund from './components/TermsCondition/Refund';
 
 function App() {
   return (
@@ -31,6 +34,9 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path='/applyPath' element={<ApplyNow/>}/>
+          <Route path='/privacy' element={<PrivacyPolicy/>}/>
+          <Route path='/terms' element={<TermsAndCondition/>}/>
+          <Route path='/refund' element={<Refund/>}/>
         </Routes>
       </BrowserRouter>
     </div>

@@ -13,6 +13,8 @@ import Team from './Team'
 import FAQ from './FAQ'
 import ScholarshipContainer from './ScholarshipContainer'
 import ApplyNow from './ApplyNow'
+import TeacherTraining from './TeacherTraining'
+import TermsAndCondition from './TermsCondition/TermsAndCondition'
 
 
 function Home() {
@@ -24,9 +26,11 @@ function Home() {
       </Helmet>
 
         <Navbar/>
+        {/* <TermsAndCondition/> */}
         {/* <ApplyNow/> */}
         <Clouser/>
         <Mission/>
+        {/* <TeacherTraining/> */}
         <ScholarshipContainer/>
         <Importance/>
         {/* <StatsCards/> */}

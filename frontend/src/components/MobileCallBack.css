@@ -1,125 +1,264 @@
-/* MobileCallBack.css */
+/* MobileCallBack.css - Sticky Bottom Callback Form */
 
-/* Only show on mobile */
-@media (min-width: 768px) {
-    .mobile-callback-container {
-      display: none;
-    }
+.mobile-callback-container-mail {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sticky Button Styles */
+.sticky-call-button--mail {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #4338ca 0%, #38bdf8 100%);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(67, 56, 202, 0.3);
+  cursor: pointer;
+  z-index: 1001;
+  transform: translateY(0);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: pulse 2s infinite;
+}
+
+.sticky-call-button--mail:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(67, 56, 202, 0.4);
+}
+
+.sticky-call-button--mail span {
+  display: none;
+}
+
+.call-icon-mail {
+  font-size: 1.2rem;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(67, 56, 202, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(67, 56, 202, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(67, 56, 202, 0); }
+}
+
+/* Popup Form Styles */
+.callback-popup-mail {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border-radius: 20px 20px 0 0;
+  padding: 20px;
+  box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.1);
+  
+
+  transform: translateY(100%);
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  z-index: 1002;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.callback-popup-mail.open {
+  transform: translateY(0);
+  bottom: 0;
+}
+
+.popup-header-mail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.popup-header-mail h3 {
+  margin: 0;
+  color: #2c3e50;
+  
+  font-size: 1.3rem;
+  background: linear-gradient(90deg, #4338ca 0%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.close-btn-mail {
+  background: none;
+  border: none;
+  color: #64748b;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.close-btn-mail:hover {
+  transform: rotate(90deg);
+  color: #ef4444;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group-mail {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0 15px;
+  transition: all 0.3s;
+}
+
+.input-group-mail:focus-within {
+  border-color: #4338ca;
+  box-shadow: 0 0 0 2px rgba(67, 56, 202, 0.1);
+}
+
+.input-icon-mail {
+  color: #64748b;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.input-group-mail input,
+.input-group-mail textarea {
+  flex: 1;
+  padding: 12px 0;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  background: transparent;
+}
+
+.input-group-mail textarea {
+  resize: none;
+  padding: 12px 0;
+  min-height: 80px;
+}
+
+.submit-btn-mail {
+  background: linear-gradient(135deg, #4338ca 0%, #38bdf8 100%);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+  box-shadow: 0 5px 15px rgba(67, 56, 202, 0.2);
+}
+
+.submit-btn-mail:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(67, 56, 202, 0.3);
+}
+
+.submit-btn-mail:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* Alert Styles */
+.alert {
+  position: fixed;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1003;
+  animation: slide-up 0.5s ease-out;
+}
+
+@keyframes slide-up {
+  from { transform: translate(-50%, 20px); opacity: 0; }
+  to { transform: translate(-50%, 0); opacity: 1; }
+}
+
+.alert.success {
+  background: #f0fdf4;
+  color: #166534;
+  border-left: 4px solid #22c55e;
+}
+
+.alert.error {
+  background: #fef2f2;
+  color: #991b1b;
+  border-left: 4px solid #ef4444;
+}
+
+/* Overlay for when form is open */
+.callback-popup-mail::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background: rgba(0, 0, 0, 0.5); */
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.callback-popup-mail.open::before {
+  opacity: 1;
+}
+
+/* Responsive Styles */
+@media (min-width: 481px) {
+  .sticky-call-button--mail span {
+    display: inline;
   }
   
-  /* Sticky Button */
-  .sticky-call-button {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to right, rgb(6, 147, 255), #2E8B57);
-    color: white;
-    padding: 12px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    z-index: 999;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+  .callback-popup-mail {
+    max-width: 400px;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    border-radius: 20px;
   }
   
-  .call-icon {
+  .callback-popup-mail.open {
+    transform: translate(-50%, -20px);
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sticky-call-button--mail {
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 15px;
+  }
+  
+  .popup-header-mail h3 {
     font-size: 1.2rem;
   }
   
-  /* Popup Form */
-  .callback-popup {
-    position: fixed;
-    bottom: -100%;
-    left: 0;
-    right: 0;
-    background: white;
-    border-radius: 15px 15px 0 0;
-    padding: 20px;
-    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    transition: bottom 0.3s ease-out;
+  .input-group-mail input,
+  .input-group-mail textarea {
+    font-size: 0.9rem;
   }
-  
-  .callback-popup.open {
-    bottom: 0;
-  }
-  
-  .popup-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .popup-header h3 {
-    color: #2c3e50;
-    font-size: 1.3rem;
-    margin: 0;
-  }
-  
-  .close-btn {
-    background: none;
-    border: none;
-    font-size: 1.2rem;
-    color: #666;
-    cursor: pointer;
-  }
-  
-  .input-group {
-    position: relative;
-    margin-bottom: 15px;
-  }
-  
-  .input-icon {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #4CAF50;
-  }
-  
-  input, textarea {
-    width: 100%;
-    padding: 12px 15px 12px 40px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 1rem;
-  }
-  
-  textarea {
-    padding-top: 15px;
-    min-height: 100px;
-    resize: vertical;
-  }
-  
-  .submit-btn {
-    width: 100%;
-    padding: 15px;
-    background: linear-gradient(to right, #4CAF50, #2E8B57);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  /* Overlay when form is open */
-  .callback-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 998;
-    display: none;
-  }
-  
-  .callback-popup.open + .callback-overlay {
-    display: block;
-  }
+}

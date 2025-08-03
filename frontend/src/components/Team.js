@@ -4,6 +4,7 @@ import imageSh from '../images/imageSh.jpg';
 import imageSu from '../images/imageSu.jpeg';
 import imageMu from '../images/imageMu.jpg';
 import imageAs from '../images/imageAs.jpg';
+import amirImage from '../images/amirImage.jpg'
 
 const Team = () => {
   const teamMembers = [
@@ -34,6 +35,13 @@ const Team = () => {
       role: 'ICT Tutor',
       bio: 'Loved by students for his practical teaching style, he turns every ICT class into a hands-on learning adventure.',
       img: imageSh
+    },
+    {
+      id: 5,
+      name: 'Amir Khan',
+      role: 'Academic Coach',
+      bio: 'A mentor to students and guide to teachers, He believes that real education builds confidence, not just marks. His programs help students learn, grow, and lead the future.With 5+ years of academic experience, he brings powerful, practical learning to students.',
+      img: amirImage
     }
   ];
 

@@ -1,341 +1,329 @@
 /* ApplyNow.css */
 /* Base Styles */
-.amfia-apply-container {
-    max-width: 600px;
-    margin: 2rem auto;
+/* ApplyNow.css - Animated Scholarship Form */
+
+.apply-container-scholership {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(67, 56, 202, 0.15);
+  position: relative;
+  overflow: hidden;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: form-appear 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+@keyframes form-appear {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.apply-container-scholership::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.05) 0%, transparent 70%);
+  z-index: 0;
+  animation: gradient-rotate 20s linear infinite;
+}
+
+@keyframes gradient-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.form-header-scholership {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.form-title-scholership {
+  font-size: 2.3rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #4338ca 0%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 0.8rem;
+  position: relative;
+  display: inline-block;
+}
+
+.form-title-scholership::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #4338ca 0%, #38bdf8 100%);
+  border-radius: 2px;
+  animation: underline-grow 1s ease-out forwards;
+}
+
+@keyframes underline-grow {
+  from { width: 0; opacity: 0; }
+  to { width: 80px; opacity: 1; }
+}
+
+.form-subtitle-scholership {
+  font-size: 1.1rem;
+  color: #64748b;
+  font-weight: 500;
+  animation: fade-in 1s 0.3s both;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.application-form-scholership {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  position: relative;
+  z-index: 1;
+}
+
+.form-group-scholership {
+  position: relative;
+  perspective: 1000px;
+}
+
+.form-input-scholership {
+  width: 90%;
+  padding: 1.3rem 1.5rem;
+  font-size: 1rem;
+  border: 2px solid #919294;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transform-style: preserve-3d;
+  transform: rotateX(0);
+}
+
+.form-input-scholership:focus {
+  outline: none;
+  border-color: #4338ca;
+  box-shadow: 0 0 0 3px rgba(67, 56, 202, 0.2),
+              0 8px 20px rgba(56, 189, 248, 0.2);
+  transform: rotateX(5deg);
+}
+
+.form-input-scholership:not(:placeholder-shown) + .input-label-scholership,
+.form-input-scholership:focus + .input-label-scholership {
+  transform: translateY(-2rem) scale(0.85);
+  background: linear-gradient(90deg, #4338ca 0%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  padding: 0 0.5rem;
+  left: 0.8rem;
+}
+
+.input-label-scholership {
+  position: absolute;
+  left: 1.5rem;
+  top: 1.3rem;
+  color: #94a3b8;
+  font-size: 1rem;
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+  z-index: 1;
+  transform-origin: left center;
+}
+
+.submit-btn-scholership {
+  background: linear-gradient(90deg, #4338ca 0%, #38bdf8 100%);
+  color: white;
+  border: none;
+  padding: 1.3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  box-shadow: 0 6px 20px rgba(67, 56, 202, 0.3);
+  position: relative;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.submit-btn-scholership::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: 0.5s;
+}
+
+.submit-btn-scholership:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(67, 56, 202, 0.4);
+}
+
+.submit-btn-scholership:hover::before {
+  left: 100%;
+}
+
+.submit-btn-scholership:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.spinner-scholership {
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.status-alert {
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  animation: alert-pop 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+@keyframes alert-pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  80% { transform: scale(1.05); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.status-alert::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+}
+
+.alert-success {
+  background-color: #f0fdf4;
+  color: #166534;
+}
+
+.alert-success::after {
+  background-color: #22c55e;
+}
+
+.alert-error {
+  background-color: #fef2f2;
+  color: #991b1b;
+}
+
+.alert-error::after {
+  background-color: #ef4444;
+}
+
+.alert-close-scholership {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0 0 0 1rem;
+  line-height: 1;
+  transition: transform 0.3s;
+}
+
+.alert-close-scholership:hover {
+  transform: scale(1.2);
+}
+
+/* Floating particles animation */
+.scholar-particle {
+  position: absolute;
+  background: rgba(56, 189, 248, 0.15);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  animation: float-particle 15s linear infinite;
+}
+
+@keyframes float-particle {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-500px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .apply-container-scholership {
     padding: 2rem;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
-    font-family: 'Poppins', sans-serif;
+    margin: 2rem 1.5rem;
   }
   
-  /* Header Styles */
-  .amfia-form-header {
-    text-align: center;
-    margin-bottom: 2rem;
-    position: relative;
-  }
-  
-  .amfia-form-title {
+  .form-title-scholership {
     font-size: 2rem;
-    color: #2c3e50;
-    margin-bottom: 0.5rem;
-    font-weight: 700;
   }
   
-  .amfia-form-subtitle {
-    color: #7f8c8d;
-    margin-bottom: 1.5rem;
+  .form-input-scholership {
+    width: 88%;
+    padding: 1.1rem 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .apply-container-scholership {
+    padding: 1.8rem;
   }
   
-  .amfia-header-decoration {
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(90deg, #4338ca, #38bdf8);
-    margin: 0 auto;
-    border-radius: 2px;
+  .form-title-scholership {
+    font-size: 1.8rem;
   }
   
-  /* Form Group Styles */
-  .amfia-form-group {
-    position: relative;
-    margin-bottom: 1.5rem;
-  }
-  
-  /* Floating Input Styles */
-  .amfia-floating-input {
-    position: relative;
-  }
-  
-  .amfia-text-input {
-    width: 531px !important;
-    padding: 1rem 1rem 1rem 3rem;
-    border: 2px solid #e0e0e0;
-    border-radius: 10px;
+  .form-subtitle-scholership {
     font-size: 1rem;
-    transition: all 0.3s ease;
-    background: transparent;
-    z-index: 2;
-    position: relative;
   }
   
-  .amfia-input-label {
-    position: absolute;
-    left: 3rem;
-    top: 1rem;
-    color: #7f8c8d;
-    transition: all 0.3s ease;
-    pointer-events: none;
-    background: white;
-    padding: 0 0.5rem;
-    z-index: 1;
-  }
-  
-  .amfia-text-input:focus,
-  .amfia-text-input:not(:placeholder-shown) {
-    border-color: #4338ca;
-    outline: none;
-  }
-  
-  .amfia-text-input:focus + .amfia-input-label,
-  .amfia-text-input:not(:placeholder-shown) + .amfia-input-label {
-    top: -0.6rem;
-    left: 2.5rem;
-    font-size: 0.8rem;
-    color: #4338ca;
-    z-index: 3;
-  }
-  
-  .amfia-input-icon {
-    position: absolute;
-    left: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #7f8c8d;
-    transition: all 0.3s ease;
-  }
-  
-  .amfia-text-input:focus ~ .amfia-input-icon,
-  .amfia-text-input:not(:placeholder-shown) ~ .amfia-input-icon {
-    color: #4338ca;
-  }
-  
-  .amfia-icon-svg {
-    width: 1.2rem;
-    height: 1.2rem;
-    fill: currentColor;
-  }
-  
-  /* Select Group Styles */
-  .amfia-select-group {
-    position: relative;
-  }
-  
-  .amfia-select-label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #2c3e50;
-    font-weight: 500;
-  }
-  
-  .amfia-select-input {
-    width: 100%;
-    padding: 1rem 3rem 1rem 1rem;
-    border: 2px solid #e0e0e0;
-    border-radius: 10px;
+  .submit-btn-scholership {
+    padding: 1.1rem;
     font-size: 1rem;
-    appearance: none;
-    background: transparent;
-    transition: all 0.3s ease;
   }
-  
-  .amfia-select-input:focus {
-    border-color: #4338ca;
-    outline: none;
-  }
-  
-  .amfia-select-input.amfia-placeholder {
-    color: #7f8c8d;
-  }
-  
-  .amfia-select-arrow {
-    position: absolute;
-    right: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
-    color: #7f8c8d;
-  }
-  
-  .amfia-select-arrow::after {
-    content: '';
-    display: inline-block;
-    width: 0.5rem;
-    height: 0.5rem;
-    border-right: 2px solid currentColor;
-    border-bottom: 2px solid currentColor;
-    transform: rotate(45deg);
-  }
-  
-  /* Status Alert Styles */
-  .amfia-status-alert {
-    padding: 1rem;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    animation: amfia-slideIn 0.3s ease-out;
-  }
-  
-  @keyframes amfia-slideIn {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .amfia-status-alert.amfia-success {
-    background: rgba(46, 204, 113, 0.2);
-    color: #27ae60;
-    border: 1px solid #27ae60;
-  }
-  
-  .amfia-status-alert.amfia-error {
-    background: rgba(231, 76, 60, 0.2);
-    color: #c0392b;
-    border: 1px solid #c0392b;
-  }
-  
-  .amfia-alert-close {
-    cursor: pointer;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-left: 1rem;
-  }
-  
-  /* Submit Button Styles */
-  .amfia-submit-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 2rem;
-    background: linear-gradient(90deg, #4338ca, #38bdf8);
-    color: white;
-    border: none;
-    border-radius: 50px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    margin-top: 1rem;
-  }
-  
-  .amfia-submit-btn:hover {
-    background: linear-gradient(90deg, #38bdf8, #4338ca);
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(67, 56, 202, 0.3);
-  }
-  
-  .amfia-submit-btn:disabled {
-    background: #bdc3c7;
-    transform: none;
-    box-shadow: none;
-    cursor: not-allowed;
-  }
-  
-  .amfia-btn-text {
-    transition: all 0.3s ease;
-  }
-  
-  .amfia-btn-icon {
-    margin-left: 0.5rem;
-    display: flex;
-    align-items: center;
-    transition: all 0.3s ease;
-  }
-  
-  .amfia-submit-btn:hover .amfia-btn-icon {
-    transform: translateX(5px);
-  }
-  
-  /* Form Decoration Styles */
-  .amfia-form-decoration {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    z-index: -1;
-  }
-  
-  .amfia-decoration-circle {
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(56, 189, 248, 0.1);
-  }
-  
-  .amfia-decoration-circle:nth-child(1) {
-    width: 80px;
-    height: 80px;
-    top: -30px;
-    right: -30px;
-  }
-  
-  .amfia-decoration-circle:nth-child(2) {
-    width: 120px;
-    height: 120px;
-    top: 50px;
-    right: -60px;
-  }
-  
-  .amfia-decoration-circle:nth-child(3) {
-    width: 60px;
-    height: 60px;
-    top: 100px;
-    right: -10px;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .amfia-apply-container {
-      margin: 1rem;
-      padding: 1.5rem;
-    }
-    
-    .amfia-form-title {
-      font-size: 1.5rem;
-    }
-    
-    .amfia-form-subtitle {
-      font-size: 0.9rem;
-    }
-    
-    .amfia-text-input {
-      padding-left: 2.5rem;
-      width: 362px !important;
-    }
-    
-    .amfia-input-label {
-      left: 2.5rem;
-    }
-    
-    .amfia-input-icon {
-      left: 0.8rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .amfia-apply-container {
-      padding: 1rem;
-    }
-    
-    .amfia-form-title {
-      font-size: 1.3rem;
-    }
-    
-    .amfia-text-input {
-      padding: 0.8rem 0.8rem 0.8rem 2.5rem;
-    font-size: 0.9rem;
-    width: 290px !important;
-    }
-    
-    .amfia-input-icon {
-      left: 0.7rem;
-    }
-    
-    .amfia-select-arrow {
-      right: 0.7rem;
-    }
-  }
+}

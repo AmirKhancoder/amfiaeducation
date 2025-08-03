@@ -1,5 +1,6 @@
 /* Team Section Styles */
 /* Team.css */
+
 .team-section {
   padding: 5rem 2rem;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9f5ff 100%);
@@ -97,7 +98,7 @@
 
 .team-img {
   width: 100%;
-  height: 100%;
+  height: 140%;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
