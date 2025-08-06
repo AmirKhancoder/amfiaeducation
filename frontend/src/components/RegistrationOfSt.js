@@ -41,7 +41,7 @@ const RegistrationOfSt = () => {
 
   const completeRegistration = async () => {
     try {
-      const response = await fetch('http://localhost:5002/api/register', {
+      const response = await fetch('https://kaifiyaback.onrender.com/api/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ const RegistrationOfSt = () => {
       setLoading(true);
       setError('');
 
-      const orderResponse = await fetch('http://localhost:5002/create-order', {
+      const orderResponse = await fetch('https://kaifiyaback.onrender.com/create-order', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
