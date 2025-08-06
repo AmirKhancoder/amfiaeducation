@@ -16,13 +16,15 @@ const RegistrationOfSt = () => {
 
   const [formData, setFormData] = useState({
     name: '',
+    father:'',
+    mother:'',
     grade: '',
     course: '',
     phone: '',
     email: '',
     city: '',
-    password: '',
-    confirmPassword: '',
+    refrence: '',
+    refrenceSt: '',
     acceptTerms: false
   });
 
@@ -75,7 +77,7 @@ const RegistrationOfSt = () => {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          amount: 10,
+          amount: 2000,
           currency: 'INR',
           receipt_email: formData.email
         })
@@ -116,6 +118,17 @@ const RegistrationOfSt = () => {
           setError('Full name is required');
           return false;
         }
+
+        if (!formData.father.trim()) {
+          setError('Father name is required');
+          return false;
+        }
+
+        if (!formData.mother.trim()) {
+          setError('Mother name is required');
+          return false;
+        }
+
         if (!formData.grade) {
           setError('Please select your grade');
           return false;
@@ -136,12 +149,12 @@ const RegistrationOfSt = () => {
           setError('City is required');
           return false;
         }
-        if (formData.password.length < 6) {
-          setError('Password must be at least 6 characters');
+        if (!formData.refrence || formData.refrence.length < 10) {
+          setError('Valid phone number is required');
           return false;
         }
-        if (formData.password !== formData.confirmPassword) {
-          setError('Passwords do not match');
+        if (!formData.refrenceSt || formData.refrenceSt.length < 10) {
+          setError('Valid phone number is required');
           return false;
         }
         if (!formData.acceptTerms) {
@@ -179,12 +192,36 @@ const RegistrationOfSt = () => {
 
       <form onSubmit={handleSubmit} className="registration-form-student">
         <div className="form-group-student">
-          <label htmlFor="name">Full Name</label>
+          <label htmlFor="name">Student Full Name</label>
           <input
             type="text"
             id="name"
             name="name"
             value={formData.name}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div className="form-group-student">
+          <label htmlFor="father">Father's Name</label>
+          <input
+            type="text"
+            id="father"
+            name="father"
+            value={formData.father}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div className="form-group-student">
+          <label htmlFor="mother">Mother's Name</label>
+          <input
+            type="text"
+            id="mother"
+            name="mother"
+            value={formData.mother}
             onChange={handleChange}
             required
           />
@@ -261,28 +298,30 @@ const RegistrationOfSt = () => {
         </div>
 
         <div className="form-group-student">
-          <label htmlFor="password">Password (choose strong password)</label>
+          <label htmlFor="refrence">Please Give us a refrence (Parent's Number)</label>
           <input
-            type="password"
-            id="password"
-            name="password"
-            value={formData.password}
+            type="tel"
+            id="refrence"
+            name="refrence"
+            value={formData.refrence}
             onChange={handleChange}
             required
-            minLength="6"
+            minLength="10"
+            maxLength="10"
           />
         </div>
 
         <div className="form-group-student">
-          <label htmlFor="confirmPassword">Confirm Password</label>
+          <label htmlFor="refrenceSt">Please Give one more refrence (Parent's Number)</label>
           <input
-            type="password"
-            id="confirmPassword"
-            name="confirmPassword"
-            value={formData.confirmPassword}
+            type="tel"
+            id="refrenceSt"
+            name="refrenceSt"
+            value={formData.refrenceSt}
             onChange={handleChange}
             required
-            minLength="6"
+            minLength="10"
+            maxLength="10"
           />
         </div>
 

@@ -7,11 +7,16 @@ router.get('/test-email', async (req, res) => {
     try {
       await sendRegistration({
         name: "Test User",
+        father:"Akeel",
+        mother:"test11",
         email: process.env.ADMIN_EMAIL,
         course: "Test Course",
         grade: "10th",
         phone: "9876543210",
-        city: "Test City"
+        city: "Test City",
+        refrence:"1234567890",
+        refrenceSt:"1234567890"
+
       });
       res.send("Test email sent successfully");
     } catch (error) {
@@ -21,10 +26,10 @@ router.get('/test-email', async (req, res) => {
 
 router.post('/api/register', async (req, res) => {
   try {
-    const { name, grade, course, phone, email, city} = req.body;
+    const { name,father, mother, grade, course, phone, email, city, refrence, refrenceSt} = req.body;
 
     // Validate required fields
-    if (!name || !grade || !course || !phone || !email || !city) {
+    if (!name || !father || !mother || !grade || !course || !phone || !email || !city || !refrence || !refrenceSt) {
       return res.status(400).json({ 
         success: false,
         message: 'All fields are required' 
@@ -32,7 +37,7 @@ router.post('/api/register', async (req, res) => {
     }
 
     // Send email with application details
-    await sendRegistration({ name, grade, course, phone, email, city});
+    await sendRegistration({ name,father, mother, grade, course, phone, email, city, refrence, refrenceSt});
     
     res.status(200).json({ 
       success: true, 
