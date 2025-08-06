@@ -1,0 +1,216 @@
+/* RegistrationForm.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.registration-container-student {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  animation: fadeIn 0.6s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.registration-container-student h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.registration-container-student h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #3498db, #9b59b6);
+  border-radius: 3px;
+}
+
+.course-fee-student {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #e74c3c;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  background: rgba(231, 76, 60, 0.1);
+  padding: 0.5rem;
+  border-radius: 5px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+.registration-form-student {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.form-group-student {
+  position: relative;
+}
+
+.form-group-student label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #34495e;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.form-group-student input,
+.form-group-student select {
+  width: 94.5%;
+  padding: 12px 15px;
+  border: 2px solid #dfe6e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: white;
+  color: #2d3436;
+}
+
+.form-group-student input:focus,
+.form-group-student select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+  outline: none;
+  transform: translateY(-2px);
+}
+
+.form-group-student input:hover,
+.form-group-student select:hover {
+  border-color: #b2bec3;
+}
+
+.checkbox-group-student {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.checkbox-group-student input {
+  width: auto;
+  margin-right: 10px;
+  accent-color: #3498db;
+  transform: scale(1.2);
+}
+
+.checkbox-group-student label {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.checkbox-group-student a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.checkbox-group-student a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.submit-btn-student {
+  background: linear-gradient(135deg, #3498db 0%, #9b59b6 100%);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.submit-btn-student:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+  background: linear-gradient(135deg, #2980b9 0%, #8e44ad 100%);
+}
+
+.submit-btn-student:disabled {
+  background: #bdc3c7;
+  transform: none;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.error-message-student {
+  color: #e74c3c;
+  background-color: rgba(231, 76, 60, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  border-left: 4px solid #e74c3c;
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-5px); }
+  40%, 80% { transform: translateX(5px); }
+}
+
+.registration-success {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.registration-success h2 {
+  color: #27ae60;
+  margin-bottom: 1rem;
+}
+
+.success-message {
+  color: #27ae60;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  animation: slideUp 0.5s ease-in-out;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .registration-container-student {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .registration-form-student {
+    gap: 1rem;
+  }
+}

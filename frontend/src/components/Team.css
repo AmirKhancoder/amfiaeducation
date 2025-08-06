@@ -1,0 +1,223 @@
+/* Team Section Styles */
+/* Team.css */
+
+.team-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9f5ff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.meet-team {
+  font-size: 1.2rem;
+  color: #4338ca;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.learn-box {
+  display: inline-block;
+  background: #38bdf8;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  transform: rotate(-5deg);
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: rotate(-5deg) translateY(0); }
+  50% { transform: rotate(-5deg) translateY(-10px); }
+}
+
+.best-mentors {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #4338ca, #2c3e50);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: 1.2;
+  display: inline;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #34495e;
+  margin-top: 1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.team-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-container {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.team-img {
+  width: 100%;
+  height: 140%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.team-card:hover .team-img {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 1.5rem;
+  position: relative;
+}
+
+.member-name {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.member-name::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #38bdf8;
+  transition: width 0.3s ease;
+}
+
+.team-card:hover .member-name::after {
+  width: 100%;
+}
+
+.member-role {
+  color: #4338ca;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.member-bio {
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+/* Floating elements animation */
+.floating-circle {
+  position: absolute;
+  border-radius: 50%;
+  /* background: rgba(56, 189, 248, 0.1); */
+  background: rgba(72, 163, 203, 0.481);
+  /* background: rgba(109, 96, 253, 0.439); */
+  animation: float 8s infinite ease-in-out;
+  z-index: 1;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(10px, 10px); }
+  50% { transform: translate(20px, -10px); }
+  75% { transform: translate(-10px, 10px); }
+}
+
+.floating-circle:nth-child(1) {
+  width: 150px;
+  height: 150px;
+  top: 10%;
+  left: 5%;
+  animation-delay: 0s;
+}
+
+.floating-circle:nth-child(2) {
+  width: 200px;
+  height: 200px;
+  bottom: 10%;
+  right: 5%;
+  animation-delay: 2s;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .best-mentors {
+      font-size: 2rem;
+  }
+  
+  .learn-box {
+      font-size: 1.2rem;
+  }
+  
+  .section-subtitle {
+      font-size: 1rem;
+  }
+  
+  .card-img-container {
+      height: 450px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-section {
+      padding: 3rem 1rem;
+  }
+  
+  .best-mentors {
+      font-size: 1.8rem;
+      display: block;
+      margin-top: 0.5rem;
+  }
+  
+  .learn-box {
+      display: block;
+      margin: 0 auto 0.5rem;
+      width: fit-content;
+  }
+  
+  .team-grid {
+      grid-template-columns: 1fr;
+  }
+}

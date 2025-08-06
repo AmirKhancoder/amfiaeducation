@@ -1,0 +1,191 @@
+/* Clouser.css */
+
+.body {
+  display: flex;
+  min-height: 80vh;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  background-image: url("https://acciojob.com/_next/static/media/heroBgDesktop.3e6964f3.svg");
+}
+
+.leftBody {
+  margin-top: -100px;
+  flex: 1;
+  padding: 2rem;
+  max-width: 600px;
+}
+
+.leftBody h4 {
+  color: #4CAF50;
+  /* color: #f9cc03; */
+  font-size: 40px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Animated Text Styles */
+.animated-text {
+  position: relative;
+  height: 80px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.animated-text span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  animation: rotateWords 8s linear infinite 0s;
+  font-size: 2.3rem;
+  line-height: 1.2;
+}
+
+.animated-text span:nth-child(2) {
+  animation-delay: 4s;
+}
+
+@keyframes rotateWords {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  5% {
+      opacity: 1;
+      transform: translateY(0px);
+  }
+  45% {
+      opacity: 1;
+      transform: translateY(0px);
+  }
+  50% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+.animated-text span:first-child {
+  color: #4338ca;
+}
+
+.animated-text span:last-child {
+  color: #38bdf8;
+}
+
+.leftBody h3 {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  -webkit-text-fill-color: transparent;
+  background: var(--gradients-custom-custom5, linear-gradient(45deg, #4338ca 10%, #38bdf8 90%));
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.leftBody p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-left: -80px;
+  color: white;
+  /* background-color: #fcde5a; */
+  background: linear-gradient(180deg, #2563eb, #3b82f6);;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 80px;
+}
+
+.rightBody {
+  margin-top: -120px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body_img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Tablet View */
+@media screen and (max-width: 992px) {
+  .body {
+      flex-direction: column;
+      padding: 1.5rem;
+  }
+  
+  .leftBody {
+      max-width: 100%;
+      padding: 1rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      margin-top: 10px;
+  }
+  
+  .animated-text span {
+      font-size: 2.2rem;
+  }
+  
+  .rightBody {
+      margin-top: -50px;
+      width: 100%;
+  }
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .animated-text {
+      height: 60px;
+  }
+  
+  .animated-text span {
+      font-size: 1.8rem;
+  }
+  
+  .leftBody h3 {
+      font-size: 1.3rem;
+  }
+  
+  .leftBody p {
+      font-size: 1rem;
+      margin-right: -18px;
+  }
+  
+  .body {
+      padding: 1rem;
+  }
+}
+
+/* Small Mobile View */
+@media screen and (max-width: 480px) {
+  .animated-text {
+      height: 50px;
+  }
+  
+  .animated-text span {
+      font-size: 1.5rem;
+  }
+  
+  .leftBody h4 {
+      font-size: 1.8rem;
+  }
+  
+  .leftBody {
+      padding: 0.5rem;
+  }
+
+  .rightBody {
+    
+    width: 100%;
+}
+}
