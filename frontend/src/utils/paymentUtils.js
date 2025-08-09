@@ -1,3 +1,4 @@
+import logo11 from '../images/logo11.png'
 export const loadRazorpay = () => {
     return new Promise((resolve) => {
       if (window.Razorpay) return resolve(window.Razorpay);
@@ -24,7 +25,7 @@ export const loadRazorpay = () => {
         order_id: orderData.id,
         name: "Amfia Education",
         description: "Course Registration",
-        image: "https://your-logo-url.com/logo.png",
+        image: logo11,
         prefill: {
           name: userData.name,
           email: userData.email,

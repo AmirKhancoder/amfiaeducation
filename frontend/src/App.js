@@ -17,6 +17,7 @@ import Refund from './components/TermsCondition/Refund';
 import Shipping from './components/TermsCondition/Shipping';
 import RegistraionTerms from './components/TermsCondition/RegistraionTerms';
 import RegistrationOfSt from './components/RegistrationOfSt';
+import About from './components/About';
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home/>} />
-          <Route path='/about' element={<Importance />} />
+          <Route path='/about' element={<About/>} />
           <Route path='/services' element={<Services />} />
           <Route path='/careers' element={<Careers />} />
           <Route path='/contact' element={<ContactForm />} />

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link} from "react-router-dom"
 import './FAQ.css';
 
 const FAQ = () => {
@@ -15,7 +16,7 @@ const FAQ = () => {
     },
     {
       question: "Are your instructors qualified?",
-      answer: "Yes, all our instructors are highly qualified with subject-matter expertise and teaching experience, many holding advanced degrees."
+      answer: "Yes, all our instructors are highly qualified with subject-matter expertise and teaching experience, many holding advanced degrees." 
     },
     {
       question: "Do you offer refunds?",
