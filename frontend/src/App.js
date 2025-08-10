@@ -18,6 +18,7 @@ import Shipping from './components/TermsCondition/Shipping';
 import RegistraionTerms from './components/TermsCondition/RegistraionTerms';
 import RegistrationOfSt from './components/RegistrationOfSt';
 import About from './components/About';
+import ScholarshipProgram from './components/Scholership/ScholarshipProgram';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           <Route path='/shipping' element={<Shipping/>}/>
           <Route path='/register-term' element={<RegistraionTerms/>}/>
           <Route path='/register-re' element={<RegistrationOfSt/>}/>
+          <Route path='/knowmore' element={<ScholarshipProgram/>}/>
         </Routes>
       </BrowserRouter>
     </div>

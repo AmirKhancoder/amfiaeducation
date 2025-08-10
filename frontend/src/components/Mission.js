@@ -11,7 +11,7 @@ function Mission() {
       </Helmet>
             <div className="mission-content">
                 <h2 className="mission-title">Our Mission</h2>
-                <p className="mission-statement">
+                <p className="mission-statement-mission">
                     To empower students with real-life skills that go beyond textbooks.
                 </p>
                 

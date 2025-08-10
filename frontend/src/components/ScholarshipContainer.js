@@ -28,8 +28,9 @@ function ScholarshipContainer() {
                     <p>✓ Can be used for tuition and learning resources</p>
                 </div>
                 <Link to='/applyPath'>
-                <button className="apply-button">Apply Now</button>
-                </Link>
+                <button className="apply-button">Apply Now</button></Link>
+                <Link to='/knowmore'><button className="apply-button">Know more</button></Link>
+                
             </div>
         </div>
     );

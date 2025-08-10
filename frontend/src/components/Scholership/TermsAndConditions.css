@@ -1,0 +1,47 @@
+.terms-container {
+    background: #FFF8E1;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-top: 1rem;
+    border-left: 5px solid #FFA000;
+  }
+  
+  .terms-container h2 {
+    color: #2A5CAA;
+    margin-top: 0;
+  }
+
+  .strict-note {
+    background: #FFF3E0;
+    border-left: 4px solid #FFA000;
+  }
+  
+  .strict-note h3 {
+    color: #E65100;
+  }
+  
+  .terms-content ol {
+    padding-left: 1.2rem;
+  }
+  
+  .terms-content li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .terms-content ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .important-note {
+    background: #FFEBEE;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+  }
+  
+  .important-note h3 {
+    color: #D32F2F;
+    margin-top: 0;
+  }

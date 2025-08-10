@@ -1,0 +1,166 @@
+/* Add these new styles to your existing CSS */
+/* Main Container */
+.scholarship-container-exam {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+  }
+  
+  /* Hero Banner */
+  .hero-banner-exam {
+    background: linear-gradient(135deg, #2A5CAA 0%, #4CAF50 100%);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-banner-exam h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    font-weight: 700;
+  }
+  
+  .tagline-exam {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    margin-top: 10px;
+  }
+  
+  /* Cards */
+  .scholarship-card-exam, .details-card-exam {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  /* Rewards List */
+  .rewards-list-exam {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .rewards-list-exam li {
+    font-size: 1.2rem;
+    padding: 12px 0;
+    border-bottom: 1px dashed #eee;
+  }
+  
+  .rank {
+    font-weight: 600;
+    color: #FF6B35;
+    display: inline-block;
+    width: 120px;
+  }
+  
+  .note-exam {
+    font-style: italic;
+    color: #666;
+    margin-top: 1rem;
+  }
+  
+  /* Details Section */
+  .detail-item-exam {
+    margin-bottom: 1.5rem;
+  }
+  
+  .detail-item-exam h3 {
+    color: #2A5CAA;
+    margin-bottom: 0.5rem;
+  }
+  
+  .highlight-exam {
+    background-color: #FFF9C4;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  
+  /* Pills */
+  .pill-container-exam {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .pill-exam {
+    background: #E3F2FD;
+    color: #1976D2;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  /* CTA Button */
+  .cta-button-exam {
+    background: #FF6B35;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin: 2rem auto;
+    font-weight: 600;
+    transition: all 0.3s;
+  }
+  
+  .cta-button-exam:hover {
+    background: #E65100;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(255,107,53,0.3);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-banner-exam h1 {
+      font-size: 2rem;
+    }
+    
+    .pill-container-exam {
+      justify-content: center;
+    }
+  }
+
+.payment-notice-exam {
+    background: #F5F5F5;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    border-left: 4px solid #4CAF50;
+  }
+  
+  .fee-exam {
+    font-weight: 700;
+    color: #D32F2F;
+  }
+  
+  .rule-item-exam {
+    margin-bottom: 1.5rem;
+  }
+  
+  .strict-rule-exam {
+    background-color: #FFEBEE;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #F44336;
+  }
+  
+  .strict-rule-exam h3 {
+    color: #D32F2F;
+  }
+  
+  .strict-rule-exam ul {
+    padding-left: 1.5rem;
+  }
+  
+  .strict-rule-exam li {
+    margin-bottom: 0.5rem;
+  }
