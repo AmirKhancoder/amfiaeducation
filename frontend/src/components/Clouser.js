@@ -31,7 +31,7 @@
 
 import React, { useEffect, useState } from "react";
 import schoolImage1 from "../images/schoolImage1.jpg";
-import schoolImage2 from "../images/schoolImage2.jpg";
+import schoolImage2 from "../images/schoolImage2.png";
 import schoolImage3 from "../images/schoolImage3.png";
 import './Clouser.css';
 

@@ -17,6 +17,7 @@ import TeacherTraining from './TeacherTraining'
 import TermsAndCondition from './TermsCondition/TermsAndCondition'
 import RegistrationForm from './RegistrationForm'
 import RegistrationOfSt from './RegistrationOfSt'
+import TeacherPortfolio from './TeacherPortfolio'
 
 
 function Home() {

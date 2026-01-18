@@ -4,6 +4,7 @@ import { FaChalkboardTeacher, FaSchool, FaBook, FaLaptopCode, FaUserGraduate, Fa
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
+
 const Services = () => {
   const services = [
     {
@@ -76,26 +77,27 @@ const Services = () => {
 
   return (
     <div className="services-page">
-      {/* Floating background elements */}
-      <div className="floating-bg-element"></div>
-      <div className="floating-bg-element"></div>
-      
       <Helmet>
         <title>Amfia Education | Online Skill Classes</title>
-        <meta name="description" content="amfia learning classes, amfia school development, amfia supporting schools, amfia teachers training, amfia computer courses, english speaking, career planning" />
+        <meta
+          name="description"
+          content="amfia learning classes, amfia teacher training, amfia computer courses"
+        />
       </Helmet>
 
       <section className="hero-section">
         <div className="hero-content">
           <h1>Our Comprehensive Services</h1>
-          <p>Empowering students, teachers, and schools with future-ready skills and support systems</p>
+          <p>
+            Empowering students, teachers, and schools with future-ready skills
+          </p>
         </div>
       </section>
 
       <section className="main-service">
         <div className="service-card featured">
           <h2>Student Skill Courses</h2>
-          <p>English, Math, Computer – Real-life and job-ready learning </p>
+          <p>English, Math, Computer – Real-life and job-ready learning</p>
           <ul>
             <li>Practical skill development</li>
             <li>Project-based learning</li>
@@ -107,25 +109,41 @@ const Services = () => {
 
       <section className="other-services">
         <h2>Our Other Professional Services</h2>
+
         <div className="services-grid">
-          {services.map((service, index) => (
-            <div className="service-card" key={index}>
-              <div className="service-icon">{service.icon}</div>
-              <h3>{service.title}</h3>
-              <ul>
-                {service.items.map((item, i) => (
-                  <li key={i}>{item}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          {services.map((service, index) => {
+            const card = (
+              <div className="service-card">
+                <div className="service-icon">{service.icon}</div>
+                <h3>{service.title}</h3>
+                <ul>
+                  {service.items.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            );
+
+            // 🔗 Link only Teacher Training
+            return index === 0 ? (
+              <Link
+                key={index}
+                to="/teacher-training-Det"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                {card}
+              </Link>
+            ) : (
+              <div key={index}>{card}</div>
+            );
+          })}
         </div>
       </section>
 
       <section className="cta-section">
         <h2>Ready to Transform Your Learning Experience?</h2>
-        <p>Contact us today to discuss how we can customize these services for your needs</p>
-        <Link to='/getTouch'>
+        <p>Contact us today to customize these services for your needs</p>
+        <Link to="/getTouch">
           <button className="cta-button">Get in Touch</button>
         </Link>
       </section>

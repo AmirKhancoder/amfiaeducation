@@ -19,6 +19,9 @@ import RegistraionTerms from './components/TermsCondition/RegistraionTerms';
 import RegistrationOfSt from './components/RegistrationOfSt';
 import About from './components/About';
 import ScholarshipProgram from './components/Scholership/ScholarshipProgram';
+import TeacherTraining from './components/TeacherTraining';
+import SuccessStories from './components/SuccessStories';
+import TeacherPortfolio from './components/TeacherPortfolio';
 
 function App() {
   return (
@@ -46,6 +49,9 @@ function App() {
           <Route path='/register-term' element={<RegistraionTerms/>}/>
           <Route path='/register-re' element={<RegistrationOfSt/>}/>
           <Route path='/knowmore' element={<ScholarshipProgram/>}/>
+          <Route path='/teacher-training-Det' element={<TeacherTraining/>}/>
+          <Route path='/testimonials' element={<SuccessStories/>}/>
+          <Route path='/afrozTeacher' element={<TeacherPortfolio/>}/>
         </Routes>
       </BrowserRouter>
     </div>
