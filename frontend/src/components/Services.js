@@ -4,7 +4,6 @@ import { FaChalkboardTeacher, FaSchool, FaBook, FaLaptopCode, FaUserGraduate, Fa
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
-
 const Services = () => {
   const services = [
     {
@@ -124,11 +123,20 @@ const Services = () => {
               </div>
             );
 
-            // 🔗 Link only Teacher Training
+            // Link Teacher Training (index 0) to teacher-training-Det
+            // Link School Development (index 1) to school-excellence
             return index === 0 ? (
               <Link
                 key={index}
                 to="/teacher-training-Det"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                {card}
+              </Link>
+            ) : index === 1 ? (
+              <Link
+                key={index}
+                to="/school-excellence"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 {card}

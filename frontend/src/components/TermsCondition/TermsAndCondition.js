@@ -9,7 +9,7 @@ function TermsAndCondition() {
         
         <h5>Last updated on August 1, 2025</h5>
 
-For the purpose of these Terms and Conditions, the terms "we", "us", "our" shall refer to Amfia Education, operated by Amir Kaifiya, located at Atardhani, Unnao, Uttar Pradesh – 209801. The terms "you", "your", "user", "visitor" refer to any individual or entity visiting our website or purchasing/joining our courses.
+For the purpose of these Terms and Conditions, the terms "we", "us", "our" shall refer to Amfia Education, operated by Amir Khan, located at Sai Heights, SN. 83/1 Sai Park Road, Dighi, Pune, Maharashtra – 411015. The terms "you", "your", "user", "visitor" refer to any individual or entity visiting our website or purchasing/joining our courses.
 
 <p>By using our website and/or enrolling in our courses, you agree to the following terms:</p>
 

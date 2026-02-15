@@ -51,8 +51,8 @@ function PrivacyPolicy() {
 
 <h5> Contact Us:</h5>
 <p>If you have any questions or concerns, reach out at:</p>
-<p>📍 Atardhani, Unnao, Uttar Pradesh – 209801</p>
-<p>📞 6392492293</p>
+<p>📍 Sai Heights, SN. 83/1 Sai Park Road, Dighi, Pune, Maharashtra – 411015</p>
+<p>📞 6392492293, 9559420174</p>
 <p>✉️ contact@amfiaeducation.com</p>
         
     </div>

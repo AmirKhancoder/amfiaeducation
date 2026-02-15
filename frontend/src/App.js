@@ -22,6 +22,7 @@ import ScholarshipProgram from './components/Scholership/ScholarshipProgram';
 import TeacherTraining from './components/TeacherTraining';
 import SuccessStories from './components/SuccessStories';
 import TeacherPortfolio from './components/TeacherPortfolio';
+import SchoolExcellence from './components/SchoolExcellence';
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
           <Route path='/teacher-training-Det' element={<TeacherTraining/>}/>
           <Route path='/testimonials' element={<SuccessStories/>}/>
           <Route path='/afrozTeacher' element={<TeacherPortfolio/>}/>
+          <Route path='/school-excellence' element={<SchoolExcellence/>}/>
         </Routes>
       </BrowserRouter>
     </div>

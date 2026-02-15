@@ -10,8 +10,8 @@ function Contact() {
 
             <p>
             Merchant Legal entity name : Mo Amir Khan
-            Registered Address: Atardhani Unnao UTTAR PRADESH 209802
-            Phone No. 6392492293
+            Registered Address: Sai Heights, SN. 83/1 Sai Park Road, Dighi, Pune, Maharashtra – 411015
+            <p>Phone No. 6392492293, 9559420174</p>
             email: contact@amfiaeducation.com
             </p>
         

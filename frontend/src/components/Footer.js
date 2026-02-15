@@ -24,7 +24,7 @@ const Footer = () => {
             </li>
             <li>
               <FaMapMarkerAlt className="footer-icon-amfia" />
-              <span>D-69, Sector 2, Noida 201301</span>
+              <span>Sai Heights, SN. 83/1, Sai Park Road, Dighi, Pune 411015</span>
             </li>
           </ul>
         </div>

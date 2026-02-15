@@ -1,5 +1,5 @@
-/* TeacherTraining.css */
-.teacher-training {
+/* TeacherTraining.css - All classes now start with priya- to prevent conflicts */
+.priya-teacher-training {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
   line-height: 1.6;
@@ -10,7 +10,7 @@
 }
 
 /* Section Titles */
-.tt-section-title {
+.priya-section-title {
   text-align: center;
   font-size: 2.2rem;
   margin-bottom: 1rem;
@@ -19,7 +19,7 @@
   padding-bottom: 15px;
 }
 
-.tt-section-title::after {
+.priya-section-title::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -31,14 +31,17 @@
   border-radius: 2px;
 }
 
-.tt-section-subtitle {
+.priya-section-subtitle {
   text-align: center;
   font-size: 1.2rem;
   color: #7f8c8d;
   margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.tt-highlight {
+.priya-highlight {
   background: linear-gradient(90deg, #f1c40f, #e67e22);
   -webkit-background-clip: text;
   background-clip: text;
@@ -46,7 +49,7 @@
 }
 
 /* Hero Section */
-.tt-hero {
+.priya-hero {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -55,12 +58,12 @@
   gap: 2rem;
 }
 
-.tt-hero-content {
+.priya-hero-content {
   flex: 1;
   min-width: 300px;
 }
 
-.tt-animated-title {
+.priya-animated-title {
   font-size: 2.8rem;
   margin-bottom: 1.5rem;
   color: #2c3e50;
@@ -68,23 +71,23 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: ttFadeInUp 1s ease;
+  animation: priyaFadeInUp 1s ease;
 }
 
-.tt-hero-subtitle {
+.priya-hero-subtitle {
   font-size: 1.4rem;
   color: #7f8c8d;
   margin-bottom: 2rem;
-  animation: ttFadeInUp 1s ease 0.2s both;
+  animation: priyaFadeInUp 1s ease 0.2s both;
 }
 
 /* Hours Counter */
-.tt-hours-counter {
+.priya-hours-counter {
   margin: 2rem 0;
   text-align: left;
 }
 
-.tt-counter-number {
+.priya-counter-number {
   font-size: 4rem;
   font-weight: bold;
   background: linear-gradient(90deg, #3498db, #9b59b6);
@@ -94,20 +97,20 @@
   line-height: 1;
 }
 
-.tt-counter-label {
+.priya-counter-label {
   font-size: 1.2rem;
   color: #7f8c8d;
   margin-top: 0.5rem;
 }
 
-.tt-hero-image {
+.priya-hero-image {
   flex: 1;
   min-width: 300px;
   position: relative;
-  animation: ttFadeInRight 1s ease;
+  animation: priyaFadeInRight 1s ease;
 }
 
-.tt-teacher-img {
+.priya-teacher-img {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
@@ -115,50 +118,50 @@
   transition: transform 0.5s ease;
 }
 
-.tt-teacher-img:hover {
+.priya-teacher-img:hover {
   transform: perspective(1000px) rotateY(0deg);
 }
 
-.tt-floating-elements div {
+.priya-floating-elements div {
   position: absolute;
   font-size: 2rem;
-  animation: ttFloat 6s ease-in-out infinite;
+  animation: priyaFloat 6s ease-in-out infinite;
 }
 
-.tt-floating-1 {
+.priya-floating-1 {
   top: -20px;
   left: -20px;
   animation-delay: 0s;
 }
 
-.tt-floating-2 {
+.priya-floating-2 {
   bottom: 30px;
   right: -30px;
   animation-delay: 1s;
 }
 
-.tt-floating-3 {
+.priya-floating-3 {
   top: 50%;
   right: -15px;
   animation-delay: 2s;
 }
 
 /* Benefits Section */
-.tt-benefits {
+.priya-benefits {
   padding: 4rem 0;
   background-color: #f9f9f9;
   border-radius: 10px;
   margin: 2rem 0;
 }
 
-.tt-benefits-grid {
+.priya-benefits-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
 }
 
-.tt-benefit-card {
+.priya-benefit-card {
   background: white;
   border-radius: 10px;
   padding: 2rem;
@@ -168,29 +171,29 @@
   border-top: 4px solid #3498db;
 }
 
-.tt-benefit-card:hover {
+.priya-benefit-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
-.tt-benefit-icon {
+.priya-benefit-icon {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-.tt-benefit-card h3 {
+.priya-benefit-card h3 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
   color: #2c3e50;
 }
 
-.tt-benefit-card p {
+.priya-benefit-card p {
   color: #666;
   font-size: 1rem;
 }
 
 /* Unique Section */
-.tt-unique {
+.priya-unique {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -198,16 +201,16 @@
   gap: 3rem;
 }
 
-.tt-unique-content {
+.priya-unique-content {
   flex: 1;
   min-width: 300px;
 }
 
-.tt-features-list {
+.priya-features-list {
   margin-top: 2rem;
 }
 
-.tt-feature {
+.priya-feature {
   display: flex;
   align-items: flex-start;
   margin-bottom: 1.5rem;
@@ -217,41 +220,41 @@
   transition: all 0.3s ease;
 }
 
-.tt-feature:hover {
+.priya-feature:hover {
   background: rgba(52, 152, 219, 0.2);
   transform: translateX(10px);
 }
 
-.tt-feature-icon {
+.priya-feature-icon {
   font-size: 1.5rem;
   margin-right: 1rem;
   flex-shrink: 0;
 }
 
-.tt-feature-content h3 {
+.priya-feature-content h3 {
   margin: 0 0 0.5rem 0;
   color: #2c3e50;
   font-size: 1.2rem;
 }
 
-.tt-feature-content p {
+.priya-feature-content p {
   margin: 0;
   color: #666;
 }
 
-.tt-unique-image {
+.priya-unique-image {
   flex: 1;
   min-width: 300px;
 }
 
-.tt-unique-image img {
+.priya-unique-image img {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* Milestones Section */
-.tt-milestones {
+.priya-milestones {
   padding: 4rem 0;
   background: linear-gradient(135deg, #3498db 0%, #9b59b6 100%);
   color: white;
@@ -259,14 +262,14 @@
   margin: 2rem 0;
 }
 
-.tt-milestones-grid {
+.priya-milestones-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
 }
 
-.tt-milestone-card {
+.priya-milestone-card {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 10px;
@@ -276,183 +279,100 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.tt-milestone-card:hover {
+.priya-milestone-card:hover {
   transform: scale(1.05);
   background: rgba(255, 255, 255, 0.2);
 }
 
-.tt-milestone-icon {
+.priya-milestone-icon {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-.tt-milestone-card h3 {
+.priya-milestone-card h3 {
   margin: 0 0 1rem 0;
   font-size: 1.3rem;
 }
 
-.tt-milestone-card p {
+.priya-milestone-card p {
   margin: 0;
   opacity: 0.9;
 }
 
-/* Certificate Section */
-.tt-certificate {
+/* Certificate Image Section - UPDATED */
+.priya-certificate-section {
   padding: 4rem 0;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   border-radius: 10px;
   margin: 2rem 0;
+  text-align: center;
 }
 
-.tt-certificate-preview {
+.priya-certificate-image-container {
+  position: relative;
   max-width: 800px;
-  margin: 0 auto 3rem;
-  transition: all 0.5s ease;
-  perspective: 1000px;
+  margin: 3rem auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-.tt-certificate-preview.tt-hovered {
+.priya-certificate-image-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+}
+
+.priya-certificate-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.priya-certificate-image-container:hover .priya-certificate-image {
   transform: scale(1.05);
 }
 
-.tt-certificate-border {
-  background: white;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transform-style: preserve-3d;
-  transition: all 0.5s ease;
-}
-
-.tt-certificate-preview.tt-hovered .tt-certificate-border {
-  transform: rotateY(10deg);
-  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.2);
-}
-
-.tt-certificate-content {
-  border: 2px dashed #3498db;
-  padding: 40px;
-  text-align: center;
-  position: relative;
-  min-height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.tt-certificate-header h3 {
-  font-size: 2rem;
-  color: #2c3e50;
-  margin-bottom: 0.5rem;
-}
-
-.tt-certificate-header p {
-  color: #7f8c8d;
-  margin-bottom: 2rem;
-}
-
-.tt-certificate-name {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin: 2rem 0;
-  padding: 1rem;
-  border-bottom: 2px solid #3498db;
-  border-top: 2px solid #3498db;
-  display: inline-block;
-}
-
-.tt-certificate-body {
-  margin: 2rem 0;
-}
-
-.tt-certificate-body p {
-  margin: 0.5rem 0;
-  font-size: 1.2rem;
-}
-
-.tt-certificate-body strong {
-  font-size: 1.4rem;
-  color: #2c3e50;
-}
-
-.tt-specialization-badge {
-  background: #e74c3c;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  display: inline-block;
-  margin: 1rem 0;
-  font-size: 0.9rem;
-}
-
-.tt-certificate-footer {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 3rem;
-}
-
-.tt-signature {
-  text-align: left;
-}
-
-.tt-signature p:first-child {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.tt-date {
-  text-align: right;
-}
-
-.tt-certificate-seal {
+.priya-certificate-badge {
   position: absolute;
-  top: -30px;
-  right: -30px;
-  width: 80px;
-  height: 80px;
-  background: #e74c3c;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
   color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
   font-weight: bold;
-  transform: rotate(15deg);
+  font-size: 1rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  animation: priya-pulse 2s infinite;
+  z-index: 2;
 }
 
-.tt-seal-inner {
-  width: 70px;
-  height: 70px;
-  border: 2px dashed white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.tt-certificate-qr {
+.priya-certificate-overlay {
   position: absolute;
-  bottom: 30px;
-  left: 30px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: white;
+  padding: 2rem 1rem 1rem;
   text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
 }
 
-.tt-qr-placeholder {
-  width: 80px;
-  height: 80px;
-  background: #f1f1f1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 0.5rem;
-  border: 1px dashed #ccc;
-  border-radius: 5px;
-  font-size: 0.8rem;
-  color: #666;
+.priya-certificate-image-container:hover .priya-certificate-overlay {
+  transform: translateY(0);
 }
 
-.tt-certificate-benefits {
+.priya-certificate-overlay p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.priya-certificate-benefits {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -460,7 +380,7 @@
   margin-top: 2rem;
 }
 
-.tt-certificate-benefits p {
+.priya-certificate-benefits p {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -469,25 +389,31 @@
   border-radius: 25px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   font-weight: 500;
+  transition: all 0.3s ease;
 }
 
-.tt-bullet {
+.priya-certificate-benefits p:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.priya-bullet {
   font-size: 1.2rem;
 }
 
 /* Testimonials */
-.tt-testimonials {
+.priya-testimonials {
   padding: 4rem 0;
 }
 
-.tt-testimonials-container {
+.priya-testimonials-container {
   max-width: 800px;
   margin: 0 auto;
   position: relative;
   min-height: 300px;
 }
 
-.tt-testimonial-card {
+.priya-testimonial-card {
   position: absolute;
   top: 0;
   left: 0;
@@ -501,13 +427,13 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
-.tt-testimonial-card.tt-active {
+.priya-testimonial-card.priya-active {
   opacity: 1;
   transform: translateY(0);
   position: relative;
 }
 
-.tt-testimonial-content {
+.priya-testimonial-content {
   font-size: 1.2rem;
   font-style: italic;
   color: #7f8c8d;
@@ -515,7 +441,7 @@
   quotes: "“" "”" "‘" "’";
 }
 
-.tt-testimonial-content::before {
+.priya-testimonial-content::before {
   content: open-quote;
   font-size: 3rem;
   line-height: 0;
@@ -524,12 +450,12 @@
   margin-right: 0.25em;
 }
 
-.tt-testimonial-author {
+.priya-testimonial-author {
   display: flex;
   align-items: center;
 }
 
-.tt-testimonial-author img {
+.priya-testimonial-author img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -537,25 +463,25 @@
   margin-right: 1rem;
 }
 
-.tt-testimonial-author h4 {
+.priya-testimonial-author h4 {
   margin: 0;
   color: #2c3e50;
   font-size: 1.1rem;
 }
 
-.tt-testimonial-author p {
+.priya-testimonial-author p {
   margin: 0.2rem 0 0;
   color: #7f8c8d;
   font-size: 0.9rem;
 }
 
-.tt-testimonial-dots {
+.priya-testimonial-dots {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
 }
 
-.tt-dot {
+.priya-dot {
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -565,13 +491,13 @@
   transition: all 0.3s ease;
 }
 
-.tt-dot.tt-active {
+.priya-dot.priya-active {
   background: #3498db;
   transform: scale(1.2);
 }
 
 /* CTA Section */
-.tt-cta {
+.priya-cta {
   text-align: center;
   padding: 4rem 0;
   background: linear-gradient(135deg, #3498db 0%, #9b59b6 100%);
@@ -580,12 +506,12 @@
   margin: 4rem 0;
 }
 
-.tt-cta-title {
+.priya-cta-title {
   font-size: 2.2rem;
   margin-bottom: 1rem;
 }
 
-.tt-cta-subtitle {
+.priya-cta-subtitle {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   opacity: 0.9;
@@ -594,7 +520,7 @@
   margin-right: auto;
 }
 
-.tt-timer {
+.priya-timer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -603,13 +529,13 @@
   font-size: 1.2rem;
 }
 
-.tt-timer-icon {
+.priya-timer-icon {
   font-size: 1.5rem;
-  animation: ttPulse 1.5s infinite;
+  animation: priyaPulse 1.5s infinite;
 }
 
 /* Buttons */
-.tt-cta-button {
+.priya-cta-button {
   background: white;
   color: #3498db;
   border: none;
@@ -623,17 +549,17 @@
   display: inline-block;
 }
 
-.tt-cta-button:hover {
+.priya-cta-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.tt-pulse {
-  animation: ttPulse 2s infinite;
+.priya-pulse {
+  animation: priyaPulse 2s infinite;
 }
 
-/* Animations */
-@keyframes ttFadeInUp {
+/* Animations - All renamed with priya- prefix */
+@keyframes priyaFadeInUp {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -644,7 +570,7 @@
   }
 }
 
-@keyframes ttFadeInRight {
+@keyframes priyaFadeInRight {
   from {
     opacity: 0;
     transform: translateX(20px);
@@ -655,7 +581,7 @@
   }
 }
 
-@keyframes ttFloat {
+@keyframes priyaFloat {
   0% {
     transform: translateY(0) rotate(0deg);
   }
@@ -667,7 +593,7 @@
   }
 }
 
-@keyframes ttPulse {
+@keyframes priyaPulse {
   0% {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
   }
@@ -681,85 +607,68 @@
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-  .tt-animated-title {
+  .priya-animated-title {
     font-size: 2.2rem;
   }
   
-  .tt-hero-subtitle {
+  .priya-hero-subtitle {
     font-size: 1.2rem;
   }
   
-  .tt-section-title {
+  .priya-section-title {
     font-size: 1.8rem;
   }
   
-  .tt-certificate-content {
-    padding: 20px;
-    min-height: 400px;
-  }
-  
-  .tt-certificate-header h3 {
-    font-size: 1.5rem;
-  }
-  
-  .tt-certificate-name {
-    font-size: 1.4rem;
-  }
-  
-  .tt-unique {
+  .priya-unique {
     flex-direction: column;
   }
   
-  .tt-milestones-grid {
+  .priya-milestones-grid {
     grid-template-columns: 1fr 1fr;
+  }
+  
+  .priya-certificate-overlay {
+    transform: translateY(0);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
   }
 }
 
 @media (max-width: 480px) {
-  .tt-hero {
+  .priya-hero {
     flex-direction: column;
     text-align: center;
   }
   
-  .tt-animated-title {
+  .priya-animated-title {
     font-size: 1.8rem;
   }
   
-  .tt-hours-counter {
+  .priya-hours-counter {
     text-align: center;
   }
   
-  .tt-benefits-grid {
+  .priya-benefits-grid {
     grid-template-columns: 1fr;
   }
   
-  .tt-certificate-border {
-    padding: 15px;
-  }
-  
-  .tt-certificate-seal {
-    width: 60px;
-    height: 60px;
-    top: -20px;
-    right: -20px;
-  }
-  
-  .tt-seal-inner {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .tt-milestones-grid {
+  .priya-milestones-grid {
     grid-template-columns: 1fr;
   }
   
-  .tt-certificate-benefits {
+  .priya-certificate-benefits {
     flex-direction: column;
     align-items: center;
   }
   
-  .tt-certificate-benefits p {
+  .priya-certificate-benefits p {
     width: 100%;
     justify-content: center;
+  }
+  
+  .priya-certificate-badge {
+    top: 10px;
+    right: 10px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
   }
 }
