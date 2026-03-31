@@ -1,0 +1,78 @@
+.blog-categories {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+  }
+  
+  .blog-categories h3 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  .blog-categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .blog-categories li {
+    margin-bottom: 0.8rem;
+  }
+  
+  .blog-categories a {
+    text-decoration: none;
+    color: #4a5568;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    display: block;
+    padding: 0.3rem 0;
+  }
+  
+  .blog-categories a:hover {
+    color: #4f46e5;
+  }
+  
+  .popular-tags {
+    margin-top: 2rem;
+  }
+  
+  .popular-tags h3 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .popular-tags .tag {
+    display: inline-block;
+    background: #f0f0f0;
+    color: #4a5568;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .popular-tags .tag:hover {
+    background: #4f46e5;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .blog-categories {
+      padding: 1rem;
+    }
+  }

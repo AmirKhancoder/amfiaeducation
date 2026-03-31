@@ -1,0 +1,124 @@
+/* About Page Styling */
+/* Base Styles */
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Header Styles */
+  .about-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  .about-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .intro-text {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Content Styles */
+  .about-content {
+    margin-bottom: 3rem;
+  }
+  
+  .about-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .mission-statement {
+    font-size: 1.2rem;
+    font-style: italic;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+  }
+  
+  .closing-statement {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  
+  /* Trust Section */
+  .trust-section {
+    background-color: #e8f4fc;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  
+  /* FAQ Section */
+  .faq-section {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 3rem;
+  }
+  
+  .faq-section h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .faq-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .faq-item p {
+    margin: 0;
+  }
+  
+  /* Highlight Styles */
+  .highlight-primary {
+    color: #2980b9;
+    font-weight: 600;
+  }
+  
+  .highlight-secondary {
+    color: #27ae60;
+    font-weight: 600;
+  }
+  
+  .highlight-stat {
+    color: #e74c3c;
+    font-weight: 700;
+  }
+  
+  .founder-name {
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: #3498db;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 1rem;
+    }
+    
+    .about-header h1 {
+      font-size: 2rem;
+    }
+    
+    .about-content p, .intro-text {
+      font-size: 1rem;
+    }
+  }
