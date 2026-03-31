@@ -345,7 +345,7 @@ const RegistrationOfSt = () => {
           disabled={loading} 
           className="submit-btn-student"
         >
-          {loading ? 'Processing...' : 'Register & Pay ₹2000'}
+          {loading ? 'Processing...' : 'Register & Pay ₹100'}
         </button>
       </form>
     </div>
