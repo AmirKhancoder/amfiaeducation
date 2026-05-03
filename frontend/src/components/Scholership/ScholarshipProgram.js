@@ -19,9 +19,10 @@ const ScholarshipProgram = () => {
             <li><span className="rank">1st Rank:</span> ₹2,00,000</li>
             <li><span className="rank">2nd-3rd Rank:</span> ₹50,000 each</li>
             <li><span className="rank">4th-10th Rank:</span> ₹25,000 each</li>
+            <li><span className="rank">11th-20th Rank:</span> ₹10,000 each</li>
           </ul>
           <div className="payment-notice-exam">
-            <p>📌 Registration & Exam Fee: <span className="fee-exam">₹100</span> (Non-refundable)</p>
+            <p>📌 Registration & Exam Fee: <span className="fee-exam">₹200</span> (Non-refundable)</p>
             <p>🏫 Scholarship disbursement during school's annual function</p>
           </div>
         </div>
@@ -47,8 +48,8 @@ const ScholarshipProgram = () => {
           <div className="detail-item-exam">
             <h3>Selection Process</h3>
             <ol>
-              <li><strong>Registration:</strong> Pay ₹100 fee via school</li>
-              <li><strong>Round 1:</strong> Proctored MCQ Test (90%+ cutoff)</li>
+              <li><strong>Registration:</strong> Pay ₹200 fee via school</li>
+              <li><strong>Round 1:</strong> Proctored MCQ Test (85%+ cutoff)</li>
               <li><strong>Round 2:</strong> Written Exam (95%+ cutoff)</li>
               <li><strong>Final Round:</strong> Personal Interview</li>
             </ol>

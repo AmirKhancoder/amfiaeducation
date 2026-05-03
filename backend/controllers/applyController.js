@@ -46,7 +46,7 @@ const transporter = nodemailer.createTransport({
 const sendClassDetails = async ({ name, grade, course, phone, city }) => {
   try {
     const mailOptions = {
-      from: `"KaifiYa Academy" <${process.env.EMAIL_USER}>`,
+      from: `"AmFia Academy" <${process.env.EMAIL_USER}>`,
       to: process.env.RECEIVER_EMAIL,
       subject: `New Application: ${name} - ${course}`,
       html: `

@@ -23,7 +23,7 @@ function ScholarshipContainer() {
                     the resources you need to excel in your educational journey.
                 </p>
                 <div className="scholarship-features">
-                    <p>✓ For top 10 performers in our program</p>
+                    <p>✓ For top 20 performers in our program</p>
                     <p>✓ Renewable annually based on performance</p>
                     <p>✓ Can be used for tuition and learning resources</p>
                 </div>

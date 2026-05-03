@@ -11,7 +11,7 @@ const TermsAndConditions = () => {
           <li>
             <strong>Registration Fee:</strong> 
             <ul>
-              <li>₹100 non-refundable fee per student</li>
+              <li>₹200 non-refundable fee per student</li>
               <li>The fee covers exam arrangements and digital participation certificates.</li>
               <li>No refunds for disqualification or absence</li>
             </ul>
@@ -42,7 +42,7 @@ const TermsAndConditions = () => {
           <li>
             <strong>Selection Process:</strong> 
             <ul>
-              <li>Stage 1: MCQ-based exam. Students scoring 90% or above qualify for Stage 2.</li>
+              <li>Stage 1: MCQ-based exam. Students scoring 85% or above qualify for Stage 2.</li>
               <li>Stage 2: Written exam. Students scoring 95% or above qualify for Stage 3.</li>
               <li>Stage 3: Personal interview to determine final scholarship winners.</li>
             </ul>
@@ -52,10 +52,11 @@ const TermsAndConditions = () => {
           <li>
             <strong>Selection Process:</strong> 
             <ul>
-              <li>A total of 10 students across all participating schools will receive scholarships:</li>
+              <li>A total of 20 students across all participating schools will receive scholarships:</li>
               <li>Rank 1: ₹2,00,000</li>
               <li>Ranks 2–3: ₹50,000 each</li>
               <li>Ranks 4–10: ₹25,000 each</li>
+              <li>Ranks 11–20: ₹10,000 each</li>
               <p>The scholarship amount will be awarded at the Annual Function of the student’s respective school.</p>
             </ul>
           </li>

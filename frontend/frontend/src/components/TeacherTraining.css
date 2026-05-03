@@ -1,0 +1,674 @@
+/* TeacherTraining.css - All classes now start with priya- to prevent conflicts */
+.priya-teacher-training {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow-x: hidden;
+}
+
+/* Section Titles */
+.priya-section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.priya-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #3498db, #9b59b6);
+  border-radius: 2px;
+}
+
+.priya-section-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.priya-highlight {
+  background: linear-gradient(90deg, #f1c40f, #e67e22);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Hero Section */
+.priya-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 0;
+  gap: 2rem;
+}
+
+.priya-hero-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.priya-animated-title {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  background: linear-gradient(90deg, #3498db, #9b59b6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: priyaFadeInUp 1s ease;
+}
+
+.priya-hero-subtitle {
+  font-size: 1.4rem;
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+  animation: priyaFadeInUp 1s ease 0.2s both;
+}
+
+/* Hours Counter */
+.priya-hours-counter {
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.priya-counter-number {
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #3498db, #9b59b6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: 1;
+}
+
+.priya-counter-label {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-top: 0.5rem;
+}
+
+.priya-hero-image {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  animation: priyaFadeInRight 1s ease;
+}
+
+.priya-teacher-img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transform: perspective(1000px) rotateY(-5deg);
+  transition: transform 0.5s ease;
+}
+
+.priya-teacher-img:hover {
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.priya-floating-elements div {
+  position: absolute;
+  font-size: 2rem;
+  animation: priyaFloat 6s ease-in-out infinite;
+}
+
+.priya-floating-1 {
+  top: -20px;
+  left: -20px;
+  animation-delay: 0s;
+}
+
+.priya-floating-2 {
+  bottom: 30px;
+  right: -30px;
+  animation-delay: 1s;
+}
+
+.priya-floating-3 {
+  top: 50%;
+  right: -15px;
+  animation-delay: 2s;
+}
+
+/* Benefits Section */
+.priya-benefits {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+.priya-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.priya-benefit-card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  text-align: center;
+  border-top: 4px solid #3498db;
+}
+
+.priya-benefit-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.priya-benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.priya-benefit-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.priya-benefit-card p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Unique Section */
+.priya-unique {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 4rem 0;
+  gap: 3rem;
+}
+
+.priya-unique-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.priya-features-list {
+  margin-top: 2rem;
+}
+
+.priya-feature {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: rgba(52, 152, 219, 0.1);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.priya-feature:hover {
+  background: rgba(52, 152, 219, 0.2);
+  transform: translateX(10px);
+}
+
+.priya-feature-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.priya-feature-content h3 {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+  font-size: 1.2rem;
+}
+
+.priya-feature-content p {
+  margin: 0;
+  color: #666;
+}
+
+.priya-unique-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.priya-unique-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Milestones Section */
+.priya-milestones {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #3498db 0%, #9b59b6 100%);
+  color: white;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+.priya-milestones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.priya-milestone-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.priya-milestone-card:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.priya-milestone-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.priya-milestone-card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.3rem;
+}
+
+.priya-milestone-card p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Certificate Image Section - UPDATED */
+.priya-certificate-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 10px;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.priya-certificate-image-container {
+  position: relative;
+  max-width: 800px;
+  margin: 3rem auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.priya-certificate-image-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+}
+
+.priya-certificate-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.priya-certificate-image-container:hover .priya-certificate-image {
+  transform: scale(1.05);
+}
+
+.priya-certificate-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  animation: priya-pulse 2s infinite;
+  z-index: 2;
+}
+
+.priya-certificate-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: white;
+  padding: 2rem 1rem 1rem;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.priya-certificate-image-container:hover .priya-certificate-overlay {
+  transform: translateY(0);
+}
+
+.priya-certificate-overlay p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.priya-certificate-benefits {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.priya-certificate-benefits p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.priya-certificate-benefits p:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.priya-bullet {
+  font-size: 1.2rem;
+}
+
+/* Testimonials */
+.priya-testimonials {
+  padding: 4rem 0;
+}
+
+.priya-testimonials-container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 300px;
+}
+
+.priya-testimonial-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.priya-testimonial-card.priya-active {
+  opacity: 1;
+  transform: translateY(0);
+  position: relative;
+}
+
+.priya-testimonial-content {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #7f8c8d;
+  margin-bottom: 1.5rem;
+  quotes: "“" "”" "‘" "’";
+}
+
+.priya-testimonial-content::before {
+  content: open-quote;
+  font-size: 3rem;
+  line-height: 0;
+  vertical-align: -0.4em;
+  color: #3498db;
+  margin-right: 0.25em;
+}
+
+.priya-testimonial-author {
+  display: flex;
+  align-items: center;
+}
+
+.priya-testimonial-author img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.priya-testimonial-author h4 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.priya-testimonial-author p {
+  margin: 0.2rem 0 0;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.priya-testimonial-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.priya-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #bdc3c7;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.priya-dot.priya-active {
+  background: #3498db;
+  transform: scale(1.2);
+}
+
+/* CTA Section */
+.priya-cta {
+  text-align: center;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #3498db 0%, #9b59b6 100%);
+  color: white;
+  border-radius: 10px;
+  margin: 4rem 0;
+}
+
+.priya-cta-title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.priya-cta-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.priya-timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+}
+
+.priya-timer-icon {
+  font-size: 1.5rem;
+  animation: priyaPulse 1.5s infinite;
+}
+
+/* Buttons */
+.priya-cta-button {
+  background: white;
+  color: #3498db;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+.priya-cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.priya-pulse {
+  animation: priyaPulse 2s infinite;
+}
+
+/* Animations - All renamed with priya- prefix */
+@keyframes priyaFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes priyaFadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes priyaFloat {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes priyaPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .priya-animated-title {
+    font-size: 2.2rem;
+  }
+  
+  .priya-hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .priya-section-title {
+    font-size: 1.8rem;
+  }
+  
+  .priya-unique {
+    flex-direction: column;
+  }
+  
+  .priya-milestones-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .priya-certificate-overlay {
+    transform: translateY(0);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  }
+}
+
+@media (max-width: 480px) {
+  .priya-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .priya-animated-title {
+    font-size: 1.8rem;
+  }
+  
+  .priya-hours-counter {
+    text-align: center;
+  }
+  
+  .priya-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .priya-milestones-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .priya-certificate-benefits {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .priya-certificate-benefits p {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .priya-certificate-badge {
+    top: 10px;
+    right: 10px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
