@@ -78,7 +78,7 @@ const RegistrationOfSt = () => {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          amount: 200,
+          amount: 10,
           currency: 'INR',
           receipt_email: formData.email
         })

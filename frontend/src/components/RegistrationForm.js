@@ -16,7 +16,7 @@ const RegistrationForm = () => {
     password: '',
     confirmPassword: '',
     course: '',
-    amount: 200 // Default amount or get from course selection
+    amount: 10 // Default amount or get from course selection
   };
 
   const validationSchema = Yup.object().shape({
