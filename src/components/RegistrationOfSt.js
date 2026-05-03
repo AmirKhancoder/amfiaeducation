@@ -13,7 +13,7 @@ const RegistrationOfSt = () => {
     "Exam Prep"
   ];
 
-  const grades = ["Pre Primary", "Primary", "6th", "7th", "8th", "9th", "10th"];
+  const grades = ["Pre Primary", "Primary","5th", "6th", "7th", "8th", "9th", "10th"];
 
   const [formData, setFormData] = useState({
     name: '',
@@ -78,7 +78,7 @@ const RegistrationOfSt = () => {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          amount: 50,
+          amount: 200,
           currency: 'INR',
           receipt_email: formData.email
         })
@@ -187,7 +187,7 @@ const RegistrationOfSt = () => {
     // ... (keep existing JSX)
     <div className="registration-container-student">
       <h2>Registration Form</h2>
-      <p className="course-fee-student">Registration Fee: ₹100 Only</p>
+      <p className="course-fee-student">Registration Fee: ₹200 </p>
       
       {error && <div className="error-message-student">{error}</div>}
 
@@ -345,7 +345,7 @@ const RegistrationOfSt = () => {
           disabled={loading} 
           className="submit-btn-student"
         >
-          {loading ? 'Processing...' : 'Register & Pay ₹100'}
+          {loading ? 'Processing...' : 'Register & Pay ₹200'}
         </button>
       </form>
     </div>

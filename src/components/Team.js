@@ -1,8 +1,8 @@
 import React from 'react';
 import './Team.css';
-import imageSh from '../images/imageSh.jpg';
+import imageSh from '../images/imageSh.jpeg';
 import imageSu from '../images/imageSu.jpeg';
-import imageMu from '../images/imageMu.jpg';
+// import imageMu from '../images/imageMu.jpg';
 import imageAs from '../images/imageAs.jpg';
 import amirImage from '../images/amirImage.jpg'
 
@@ -15,13 +15,13 @@ const Team = () => {
       bio: 'Education specialist with 5+ years experience in curriculum development and teaching',
       img: imageSu
     },
-    {
-      id: 2,
-      name: 'Mukesh Kumar',
-      role: 'EVS Tutor',
-      bio: 'A caring EVS teacher for Grades 5–10, known for making nature, science, and environment easy and interesting.',
-      img: imageMu
-    },
+    // {
+    //   id: 2,
+    //   name: 'Avinash Singh',
+    //   role: 'EVS Tutor',
+    //   bio: 'A caring EVS teacher for Grades 5–10, known for making nature, science, and environment easy and interesting.',
+    //   img: imageMu
+    // },
     {
       id: 3,
       name: 'Asutosh Sharma',
@@ -31,7 +31,7 @@ const Team = () => {
     },
     {
       id: 4,
-      name: 'Shakeel Gori',
+      name: 'Mayank Singh',
       role: 'ICT Tutor',
       bio: 'Loved by students for his practical teaching style, he turns every ICT class into a hands-on learning adventure.',
       img: imageSh
